@@ -1,4 +1,3 @@
-prompt("JavaScript works!");prompt("JavaScript works!");
 
 // var string
 // var number
