@@ -11,14 +11,12 @@ if (step1 ===true) {
 	console.log("Watch out those zombies are right on your heels!!!!");
 	};
 
-
-
-/*var zombies = [
-	"Runner"
-	"Lifter"
+var zombies = [
+	"Runner",
+	"Lifter",
 	"Hydrator"
 ];
 
 
 
-console.log (zombies[1]);*/
+console.log (zombies[1]);
