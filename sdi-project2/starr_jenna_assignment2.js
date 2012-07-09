@@ -1,27 +1,24 @@
+//SDI Project 2
+// Author: Jenna Starr
+
 alert ("Week Two of Zombie Fitness Squad!");
 
-/*
- var boolean
- var number
- var string
- var array
+var step1= true
 
- if () {
-	console.log();
+if (step1 ===true) {
+	console.log("You made it to week two of training!");
 } else {
-	console.log();
+	console.log("Watch out those zombies are right on your heels!!!!");
 	};
-*/
 
-var zombie1 = "Runner",
-	zombie2 = "Lifter",
-	zombie3 = "Hydrator"
-;
 
-var zombies = [
+
+/*var zombies = [
 	"Runner"
 	"Lifter"
 	"Hydrator"
 ];
 
-console.log ( zombies );
+
+
+console.log (zombies[1]);*/
