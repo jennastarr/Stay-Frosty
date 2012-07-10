@@ -5,6 +5,14 @@ alert ("Week Two of Zombie Fitness Squad!");
 
 var step1= true
 
+var speed = 5.2;
+var strength = 6.9;
+
+var workingWith = function (speed, strength) {
+	var level = speed * strength ;
+	return area;
+}
+
 if (step1 ===true) {
 	console.log("You made it to week two of training!");
 } else {
