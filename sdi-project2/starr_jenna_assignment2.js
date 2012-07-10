@@ -3,6 +3,14 @@
 
 alert ("Week Two of Zombie Fitness Squad!");
 
+var ready = prompt("Are you ready to begin?", "");
+if (ready) {
+	alert("You said" + ready);
+}
+else {
+	alert("Fine then let the brain eating begin.");
+}
+
 var step1= false
 if (step1 ===true) {
 	console.log("You made it to week two of training!");
@@ -33,5 +41,5 @@ var reportLevel = function (name , level, message){
 };
 
 var level = workingWith(4)
-reportLevel("Runner", level, " and is gaining on you");
+reportLevel("Runner", level, " and is gaining on you!");
 
