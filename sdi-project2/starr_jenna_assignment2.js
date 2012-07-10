@@ -4,15 +4,6 @@
 alert ("Week Two of Zombie Fitness Squad!");
 
 var step1= true
-
-var speed = 5.2;
-var strength = 6.9;
-
-var workingWith = function (speed, strength) {
-	var level = speed * strength ;
-	return area;
-}
-
 if (step1 ===true) {
 	console.log("You made it to week two of training!");
 } else {
@@ -26,5 +17,23 @@ var zombies = [
 ];
 
 
-
 console.log (zombies[1]);
+
+
+
+
+var quick = 5.342;
+var strength = 4;
+
+var workingWith = function (quick) {
+	var level = quick * strength 
+	return level;
+};
+
+var reportLevel = function (name , level, message){
+	console.log(name + "is at" + level + message);
+};
+
+var level = workingWith(4)
+reportLevel("Runner", level, "is gaining on you");
+
