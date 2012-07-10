@@ -17,6 +17,8 @@ if (step1 ===true) {
 } else {
 	console.log("Watch out those zombies are right on your heels!!!!");
 	};
+	
+console.log("You're not the only one who has been working out. The zombies now have levels to better challenge you.")
 
 var zombies = [
 	"Runner",
@@ -25,8 +27,7 @@ var zombies = [
 ];
 
 
-console.log (zombies[1]);
-
+console.log (zombies[1] + " is right behind you!");
 
 var quick = 5.342;
 var strength = 4;
@@ -41,5 +42,13 @@ var reportLevel = function (name , level, message){
 };
 
 var level = workingWith(4)
-reportLevel("Runner", level, " and is gaining on you!");
+reportLevel(zombies[2], level, " and is gaining on you!");
+
+
+for (var reps = 71; reps > 0; reps--){
+	console.log(reps + " miles to go.");
+};
+
+console.log("You're finished for today.");
+
 
