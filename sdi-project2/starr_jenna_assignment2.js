@@ -3,35 +3,37 @@
 
 alert ("Week Two of Zombie Fitness Squad!");
 
-var ready = prompt("Are you ready to begin?", "");
-if (ready) {
-	alert("You said" + ready);
+var ready = (true, "Are you ready to begin?", "");
+if (ready ===true) {
+	console.log("Let's kick it!");
 }
 else {
-	alert("Fine then let the brain eating begin.");
+	console.log("Fine then let the brain eating begin.");
 }
 
+//boolean function
 var step1= false
 if (step1 ===true) {
 	console.log("You made it to week two of training!");
-} else {
+} 
+else {
 	console.log("Watch out those zombies are right on your heels!!!!");
 };
 	
 console.log("You're not the only one who has been working out. The zombies now have levels to better challenge you.")
 
+
+//array function
 var zombies = [
 	"Runner",
 	"Lifter",
 	"Hydrator"
 ];
-
-
 console.log (zombies[1] + " is right behind you!");
 
 
-
-var workingWith = function (quick) {
+//number function
+var workingWith = function () {
 	var quick = 5.342;
 	var strength = 4;
 		var level = quick * strength 
