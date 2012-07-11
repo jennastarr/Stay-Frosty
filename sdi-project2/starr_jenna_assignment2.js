@@ -16,7 +16,7 @@ if (step1 ===true) {
 	console.log("You made it to week two of training!");
 } else {
 	console.log("Watch out those zombies are right on your heels!!!!");
-	};
+};
 	
 console.log("You're not the only one who has been working out. The zombies now have levels to better challenge you.")
 
@@ -29,12 +29,13 @@ var zombies = [
 
 console.log (zombies[1] + " is right behind you!");
 
-var quick = 5.342;
-var strength = 4;
+
 
 var workingWith = function (quick) {
-	var level = quick * strength 
-	return level;
+	var quick = 5.342;
+	var strength = 4;
+		var level = quick * strength 
+		return level;
 };
 
 var reportLevel = function (name , level, message){
