@@ -3,7 +3,7 @@
 
 alert ("Week Two of Zombie Fitness Squad!");
 
-var ready = (true, "Are you ready to begin?", "");
+var ready = (false, "Are you ready to begin?", "");
 if (ready ===true) {
 	console.log("Let's kick it!");
 }
