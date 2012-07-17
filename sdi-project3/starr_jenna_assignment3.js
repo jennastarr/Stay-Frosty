@@ -7,7 +7,7 @@ alert("JavaScript works!");
 
 //global variable
 
-var motivation = 
+var motivation = "Keep it moving!"
 
 // loop x3
 
@@ -25,16 +25,23 @@ var motivation =
   }
 */
 
-var student = {
-	id: "1298304",
-	name: "heidi",
+//json
+var name = {
+	"name": "Next Level"
+	"brains needed": 2,
+	"miles": 22
+};
+
+var zombie = {
+	level: "Runner",
+	name: "Heidi",
 	interests: [
 	"Running",
 	"Eating Brains",
 	"Groaning"
 	],
 	age: 32,
-	sayHi: function () {
+	saySomething: function () {
 		console.log ("Brainsssssss");
 	}
 };
@@ -42,19 +49,19 @@ var key = "name";
 student.name = "Heidi";
 
 console.log(student[key] );
-console.log(student["sayHi"] );
-console.log(student.sayHi );
+console.log(student["saySomething"] );
+console.log(student.saySomething );
 
-student.sayHi();
+student.saySomething();
 
-student.sayHi= function() {
+student.saySomething= function() {
 	console.log("Uhhhhhhh");
 };
 
-student["sayHi"]();
+student["saySomething"]();
 
-for (var key in student) {
-	console.log("key: " + key + ", value: ", student[key]);
+for (var key in zombie) {
+	console.log("key: " + key + ", value: ", zombie[key]);
 };
 
 
