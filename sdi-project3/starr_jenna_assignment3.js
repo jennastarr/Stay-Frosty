@@ -11,30 +11,41 @@ var motivation = "Keep it moving!"
 
 console.log(motivation);
 
+// json
+var secTitle = {
+	"secTitle": "Next Level",
+	"brains needed": 26,
+	"miles": 22
+	
+};
+console.log (secTitle);
 // loop x3
 
-/* for loop
+ // for loop
+ for (var brainLvl = 26; brainLvl > 0; brainLvl--) {
+	console.log(brainLvl + " brains left to get.");
+};
+
+console.log("Don't believe what anyone says, you're going places.");
+
+ /*
  for (i=0; i<5; i++)
   {
   x=x + "The number is " + i + "<br />";
   }
-  
-  while loop
-  while (i<5)
-  {
-  x=x + "The number is " + i + "<br />";
-  i++;
-  }
-*/
-
-// json
-var secTitle = {
-	"secTitle": "Next Level",
-	"brains needed": 2,
-	"miles": 22
-console.log ("miles");
+*/  
+  // while loop
+  var miles = 1;
+  while (miles > 1) {
+  console.log(mile + " down!");
+  mile--;
 };
+console.log("You made it to the next level, congratulations!");
 
+
+
+
+//object
 var zombie = {
 	level: "Runner",
 	name: "Heidi",
