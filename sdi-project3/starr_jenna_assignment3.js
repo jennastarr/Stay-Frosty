@@ -32,6 +32,7 @@ var secTitle = {
 	"secTitle": "Next Level",
 	"brains needed": 2,
 	"miles": 22
+console.log ("miles");
 };
 
 var zombie = {
