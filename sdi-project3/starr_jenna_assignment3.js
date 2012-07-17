@@ -3,11 +3,13 @@
 //Project 3
 //Zombie fitness story line.
 
-alert("JavaScript works!");
+alert("No brains, no gain!");
 
 //global variable
 
 var motivation = "Keep it moving!"
+
+console.log(motivation);
 
 // loop x3
 
@@ -25,9 +27,9 @@ var motivation = "Keep it moving!"
   }
 */
 
-//json
-var name = {
-	"name": "Next Level"
+// json
+var secTitle = {
+	"secTitle": "Next Level",
 	"brains needed": 2,
 	"miles": 22
 };
@@ -46,19 +48,19 @@ var zombie = {
 	}
 };
 var key = "name";
-student.name = "Heidi";
+zombie.name = "Heidi";
 
-console.log(student[key] );
-console.log(student["saySomething"] );
-console.log(student.saySomething );
+console.log(zombie[key] );
+console.log(zombie["saySomething"] );
+console.log(zombie.saySomething );
 
-student.saySomething();
+zombie.saySomething();
 
-student.saySomething= function() {
+zombie.saySomething= function() {
 	console.log("Uhhhhhhh");
 };
 
-student["saySomething"]();
+zombie["saySomething"]();
 
 for (var key in zombie) {
 	console.log("key: " + key + ", value: ", zombie[key]);
