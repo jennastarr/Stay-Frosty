@@ -23,7 +23,7 @@ console.log (secTitle);
 
  // for loop
  for (var brainLvl = 26; brainLvl > 0; brainLvl--) {
-	console.log(brainLvl + " brains left to get.");
+	console.log("You have " + brainLvl + " brains to get.");
 };
 
 console.log("Don't believe what anyone says, you're going places.");
@@ -35,10 +35,10 @@ console.log("Don't believe what anyone says, you're going places.");
   }
 */  
   // while loop
-  var miles = 1;
-  while (miles > 1) {
-  console.log(mile + " down!");
-  mile--;
+  var miles = 22;
+  while (miles > 0) {
+  console.log(miles + " left to go!");
+  miles--;
 };
 console.log("You made it to the next level, congratulations!");
 
