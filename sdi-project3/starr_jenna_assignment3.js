@@ -92,7 +92,7 @@ var zombieR = {
 	"Groaning"
 	],
 	age: 32,
-	saySomething: function () {
+	saySomething: function() {
 		console.log ("Brainsssssss");
 	}
 };
@@ -120,19 +120,61 @@ for (var key in zombieR) {
 var zombieL = {
 	"name": "Hans",
 	"level": "Lifter",
-	"brainseaten": 27,
+	"eaten": 27,
 	"Hans": function(){
-		// completeHans = this.name * this.level * this.brainseaten;
-		// console.log("My zombie is " + completeHans);
+		var completeHans = name * level * eaten;
+		console.log("My zombie is " + completeHans);
 		},
+// Method:Accessor
 		"getHans": function(){
-		zombieInfo = this.name * this.level * this.brainseaten;
+		var zombieInfo = this.name * this.level * this.eaten;
 		return zombieInfo;
 		}
+};
+// Missing something, console log shows My Zombie is NoN.
+console.log("My zombie is " + zombieL.getHans());
 
+// Object Method Mutator
+var zombieH = function(level, eaten){
+		var name = "Z Grandpa";
+		
+		this.pops= function(){
+			var completePops = level * eaten;
+			console.log("Total area " + completePops);
+			};
+		this.getPops = function(){
+		var newPops = level * eaten;
+		return newPops;
+		}
+		this.setEaten = function(newEaten){
+			eaten = newEaten;
+		};
 };
 
-console.log("My zombie is " + zombieL.getHans());
+// Still getting NoN. 
+var zGrandpa = new zombieH ("Hydrator",72);
+console.log(zGrandpa.getPops());
+newZombieh.setEaten(75);
+console.log(newzombieH.getPops + "More brains eaten, less patrons."());
+/*
+var cube = function(length, width, height){
+		var name = "My Cube";
+		
+		this.area= function(){
+			var totalArea = length * width * height;
+			console.log("Total area " + totalArea);
+			};
+		this.getArea = function(){
+		var newArea = length * width * height;
+		return newArea;
+		}
+};
+var myCube = new cube (10,10,10);
+console.log(myCube.getArea());
+		
+*/
+
+	
 	
 
 
