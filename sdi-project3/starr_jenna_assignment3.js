@@ -6,44 +6,29 @@
 alert("No brains, no gain!");
 
 // return boolean
-/*
- function getValue(){
-         var myValue = 4*3;
-         return myValue;
-    }
-    function fill(){
-         var x = getValue();
-         document.form1.tmp.value = x;
-    }
-*/
+
 // return array
-/*
-function zombieList() {
-        var zombieList = zombie Listing(3);
-        zombieList[0] = "A",
-        zombieList[1] = "B",
-        zombieList[2] = "C"
-        
+var zombieList = function () {
+	var names = ["Heidi", "Hans", "Grandpa"];
+	var eaten = [32,27,72];
+		var level = names * eaten 
+		return level;
+};
+
+var reportLevel = function (name , level, message){
+	console.log(name + " has eaten " + level + message);
+};
+
+var zombieList= function() {
+        var zombieList = [
+        "Hydrator",
+        "Lifter",
+        "Runner"
+        ];
         return zombieList;
    };
-   
-
-   function showArray(theArray){
-        var quote = "";
-        for (var i = 0; i < theArray.length; i++){
-            quote += theArray[i] + " ";
-        }
-        return quote;  
- var beginning= (true)
-function start(beginning)
-{
-    if (start("Do you want to visit " + beginnig + " site.")) {
-      return true;
-    } else {
-      return false;
-    }
-};
-*/
+  
+ 
 
 // global variable
 var motivation = "Keep it moving!"
@@ -91,7 +76,7 @@ var zombieR = {
 	"Eating Brains",
 	"Groaning"
 	],
-	age: 32,
+	eaten: 32,
 	saySomething: function() {
 		console.log ("Brainsssssss");
 	}
@@ -117,7 +102,7 @@ for (var key in zombieR) {
 
 // object method function
 
-var zombieL = {
+var hans = {
 	"name": "Hans",
 	"level": "Lifter",
 	"eaten": 27,
@@ -132,19 +117,19 @@ var zombieL = {
 		}
 };
 // Missing something, console log shows My Zombie is NoN.
-console.log("My zombie is " + zombieL.getHans());
+console.log("My zombie is " + hans.getHans());
 
 // Object Method Mutator
 var zombieH = function(level, eaten){
-		var name = "Z Grandpa";
+		var name = "Grandpa";
 		
-		this.pops= function(){
-			var completePops = level * eaten;
-			console.log("Total area " + completePops);
+		this.area= function(){
+			var totalArea = level * eaten;
+			console.log("Total " + totalArea);
 			};
-		this.getPops = function(){
-		var newPops = level * eaten;
-		return newPops;
+		this.area = function(){
+		var newArea = level * eaten;
+		return newArea;
 		}
 		this.setEaten = function(newEaten){
 			eaten = newEaten;
@@ -152,10 +137,12 @@ var zombieH = function(level, eaten){
 };
 
 // Still getting NoN. 
-var zGrandpa = new zombieH ("Hydrator",72);
-console.log(zGrandpa.getPops());
-newZombieh.setEaten(75);
-console.log(newzombieH.getPops + "More brains eaten, less patrons."());
+var grandpa = new gpa ("Hydrator",72);
+var newGpa = new gpa ("Relic", 73);
+console.log("grandpa:" + zombieH.getArea());
+console.log("newGpa:" + newgpa.getArea());
+newgpa.setEaten(75);
+console.log("More brains eaten, less patrons:" + newGpa.getArea());
 /*
 var cube = function(length, width, height){
 		var name = "My Cube";
@@ -163,17 +150,27 @@ var cube = function(length, width, height){
 		this.area= function(){
 			var totalArea = length * width * height;
 			console.log("Total area " + totalArea);
-			};
+		};
 		this.getArea = function(){
 		var newArea = length * width * height;
 		return newArea;
-		}
+		};
+		this.setHeight= function(newHeight){
+			height=newHeight;
+		};
 };
-var myCube = new cube (10,10,10);
-console.log(myCube.getArea());
-		
-*/
 
+
+var myCube = new cube (10,10,10);
+var newCube = new cube (7,8,9);
+console.log("myCube:" + myCube.getArea());
+console.log("newCube:" + newCube.getArea());
+newCube.setHeight(20);
+console.log("Area with our new height:" + newCube.getArea());
+
+		
+
+*/
 	
 	
 
