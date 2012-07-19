@@ -5,8 +5,47 @@
 
 alert("No brains, no gain!");
 
-//global variable
+// return boolean
+/*
+ function getValue(){
+         var myValue = 4*3;
+         return myValue;
+    }
+    function fill(){
+         var x = getValue();
+         document.form1.tmp.value = x;
+    }
+*/
+// return array
+/*
+function zombieList() {
+        var zombieList = zombie Listing(3);
+        zombieList[0] = "A",
+        zombieList[1] = "B",
+        zombieList[2] = "C"
+        
+        return zombieList;
+   };
+   
 
+   function showArray(theArray){
+        var quote = "";
+        for (var i = 0; i < theArray.length; i++){
+            quote += theArray[i] + " ";
+        }
+        return quote;  
+ var beginning= (true)
+function start(beginning)
+{
+    if (start("Do you want to visit " + beginnig + " site.")) {
+      return true;
+    } else {
+      return false;
+    }
+};
+*/
+
+// global variable
 var motivation = "Keep it moving!"
 
 console.log(motivation);
@@ -15,11 +54,12 @@ console.log(motivation);
 var secTitle = {
 	"secTitle": "Next Level",
 	"brains needed": 26,
-	"miles": 22
+	"miles": 22, 
+	"locker combo":[ 1,4,8,2]
 	
 };
 console.log (secTitle);
-// loop x3
+
 
  // for loop
  for (var brainLvl = 26; brainLvl > 0; brainLvl--) {
@@ -28,18 +68,15 @@ console.log (secTitle);
 
 console.log("Don't believe what anyone says, you're going places.");
 
- /*
- for (i=0; i<5; i++)
-  {
-  x=x + "The number is " + i + "<br />";
-  }
-*/  
+ 
   // while loop
   var miles = 22;
   while (miles > 0) {
   console.log(miles + " left to go!");
   miles--;
+  
 };
+
 console.log("You made it to the next level, congratulations!");
 
 
