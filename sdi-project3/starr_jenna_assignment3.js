@@ -83,7 +83,7 @@ console.log("You made it to the next level, congratulations!");
 
 
 //object
-var zombie = {
+var zombieR = {
 	level: "Runner",
 	name: "Heidi",
 	interests: [
@@ -97,30 +97,42 @@ var zombie = {
 	}
 };
 var key = "name";
-zombie.name = "Heidi";
+zombieR.name = "Heidi";
 
-console.log(zombie[key] );
-console.log(zombie["saySomething"] );
-console.log(zombie.saySomething );
+console.log(zombieR[key] );
+console.log(zombieR["saySomething"] );
+console.log(zombieR.saySomething );
 
-zombie.saySomething();
+zombieR.saySomething();
 
-zombie.saySomething= function() {
+zombieR.saySomething= function() {
 	console.log("Uhhhhhhh");
 };
 
-zombie["saySomething"]();
+zombieR["saySomething"]();
 
-for (var key in zombie) {
-	console.log("key: " + key + ", value: ", zombie[key]);
+for (var key in zombieR) {
+	console.log("key: " + key + ", value: ", zombieR[key]);
 };
 
+// object method function
+
+var zombieL = {
+	"name": "Hans",
+	"level": "Lifter",
+	"brainseaten": 27,
+	"Hans": function(){
+		// completeHans = this.name * this.level * this.brainseaten;
+		// console.log("My zombie is " + completeHans);
+		},
+		"getHans": function(){
+		zombieInfo = this.name * this.level * this.brainseaten;
+		return zombieInfo;
+		}
+
+};
+
+console.log("My zombie is " + zombieL.getHans());
+	
 
 
-// argument x5
-
-// method x4
-
-// property x5
-
-// return x5
