@@ -154,34 +154,23 @@ var newZombie = new zombie (31, 73, 75);
 console.log("grandpa:" + zombieH.getArea());
 newZombie.setEaten(75);
 console.log("More brains eaten, less patrons:" + newZombie.getArea());
-/*
-var cube = function(length, width, height){
-		var name = "My Cube";
-		
-		this.area= function(){
-			var totalArea = length * width * height;
-			console.log("Total area " + totalArea);
-		};
-		this.getArea = function(){
-		var newArea = length * width * height;
-		return newArea;
-		};
-		this.setHeight= function(newHeight){
-			height=newHeight;
-		};
+
+var gymMem = function(givenCash) {
+	 var pricePerMonth = 36,
+	 	perWeek;
+	 if (givenCash < pricePerMonth){
+	 console.log("You aren't coming in for that much!");
+	 perWeek = 0;
+	}
+	else {
+		perWeek = Math.floor(givenCash / pricePerMonth);
+	}
+	return perWeek;
 };
 
-
-var myCube = new cube (10,10,10);
-var newCube = new cube (7,8,9);
-console.log("myCube:" + myCube.getArea());
-console.log("newCube:" + newCube.getArea());
-newCube.setHeight(20);
-console.log("Area with our new height:" + newCube.getArea());
-
-		
-
-*/
+ var gotGym = gymMem (1);
+ console.log("Thanks for paying " + gotGym + " your` a membership!");
+ 
 	
 	
 
