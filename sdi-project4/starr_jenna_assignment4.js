@@ -8,23 +8,27 @@ alert("JavaScript works!");
  have it go through a series of steps to validate that it does or does not meet the
  parameters of a phone number.
 */
-numberChecking = ("816-867-5209");
 
 // getting anonymous function does not always return value.
-var numberChecking = function(lookDigits){ 
-        var validPhoneNumber = lookDigits;
-        // using the var listing has it look through the three sections of digits to verify it is a phone number.
+var checkNum = function (testDigits) {
+        var phoneNumber = testDigits;
         var listing = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
-        if (listing.test(validPhoneNumber)) { 
-            var realNumber = validPhoneNumber.replace(pattern, "($1) $2-$3" );
+        if (listing.test(phoneNumber)) { 
+        
+        // using the var listing has it look through the three sections of digits to verify it is a phone number.
+        
+            var realPhoneNumber = phoneNumber.replace(listing, "($1) $2-$3");
             
-            //console log gives a string validation if it is either correct or incorrect.
-            console.log("This is a phone number.");
+            // console log out put validates whether it is or isn't a real phone number.
+            console.log("Affirmative, this is a phone number."); 
         } else {
-            return console.log("You must first dial a 1."); 
-        }
-	}
+            return console.log("You must first dial a one when using this number."); 
+        };
+    };
 
+checkNum("816-867-5309");
+    
+    
 // Format a number to use a specific number of decimal places, as for money. 2.1 - 2.10
 /*
 A code for displaying limited decimal points. This code acts as a boundary set when displaying
