@@ -89,7 +89,25 @@ function checkUrl(testLink) {
     };
 };
 
+// 5. Does a string follow an aaa@bbb.ccc pattern like an email address?
+/*
+Given an email address, parameters are given within the code to check against the email
+address. If these are met then console log will give you a negative or affirmative response.
+*/
 
+checkEmailAddy("checkyoself@prodigy.com");
+
+function checkEmailAddy(emailToCheck) {
+    var emailAddy = emailToCheck
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/
+    if (emailPattern.test(emailAddy)) {
+        console.log("Email Address Validated!");
+    } else {
+        console.log("Error! Not a valid email address.");
+    };
+};
+
+// 6. 
 
 var motivation = "Keep it moving!"
 console.log(motivation);
