@@ -1,3 +1,6 @@
+//Jenna Starr
+//July 26th, 2012
+//Project 4
 alert("Project 4 the ReMix!");
 
 
@@ -86,6 +89,8 @@ function checkUrl(testLink) {
 /*
 Given an email address, parameters are given within the code to check against the email
 address. If these are met then console log will give you a negative or affirmative response.
+
+Adjusted the code where it has a return option rather then a console log.
 */
 
 var emailAddy = function ( emailCheck ){
@@ -99,17 +104,24 @@ var emailAddy = function ( emailCheck ){
 	};
 	
 // Find the smallest value in an array that is greater than a given number.
+/*
+Providing an array with a listing of numbers and then within the indexOf giving a parameter
+of the given number to compare it against.
+*/
 	var array = function ( arrayOf ){
 		var arrayName = [2, 4, 6, 8, 10];
 		return library.arrayOf = arrayName.indexOf(8);
 		};
 
 // Given a string that is a list of things separated by a given string, as well as another string separator , return a string with the first separator changed to the second: "a,b,c" + "," + "/" ➜ "a/b/c".
+/*
+This 
+*/	
 	var stringSep = function (string, past, present) {
 		var stringOne = string,
-		end = new RegExp(past, "g"); // RegExp: Creates a regular expression object for matching text with a pattern.
+		end = new RegExp(past, "g");
 		stringOne = stringOne.replace(end, present);
-		return library.sting = stringOne;
+		return library.string = stringOne;
 	};
 	
 
