@@ -1,7 +1,7 @@
 alert("Project 4 the ReMix!");
 
 
-// 1. Format a number to use a specific number of decimal places, as for money: 2.1 ➜ 2.10
+// Format a number to use a specific number of decimal places, as for money: 2.1 ➜ 2.10
 /*
 A code for displaying limited decimal points. This code acts as a boundary set when displaying
 number with numerous decimal points. You are able to simply adjust the "toFixed" area to set
@@ -16,7 +16,7 @@ the limit of decimal places you would like shown.
 
 
 
-// 2. Does a string follow a 123-456-7890 pattern like a phone number?
+// Does a string follow a 123-456-7890 pattern like a phone number?
 /*
  With this code we are providing a string of numbers in a phone number format and
  have it go through a series of steps to validate that it does or does not meet the
@@ -30,7 +30,7 @@ the limit of decimal places you would like shown.
 		};
 	};
 	
-// 3. Title-case a string (split into words, then uppercase the first letter of each word.)
+// Title-case a string (split into words, then uppercase the first letter of each word.)
 /*
 Providing a phrase or statement where you want just the first letter of each word to be
 uppercase is not something you have to go through and do manually. You can provide the 
@@ -48,7 +48,7 @@ function fixCase(fixThis) {
     console.log(fixThis.toProperCase()); 
 };
 
-//  4. Is the string a URL? (Does it start with http: or https:?)
+// Is the string a URL? (Does it start with http: or https:?)
 /*
 We give a proper link within this code to be analyzed in the beginning. For the console
 log we concatenate to confirm or deny if it is a http or https. This is done by telling
@@ -82,7 +82,7 @@ function checkUrl(testLink) {
     };
 };
 
-// 5. Does a string follow an aaa@bbb.ccc pattern like an email address?
+// Does a string follow an aaa@bbb.ccc pattern like an email address?
 /*
 Given an email address, parameters are given within the code to check against the email
 address. If these are met then console log will give you a negative or affirmative response.
@@ -98,6 +98,20 @@ var emailAddy = function ( emailCheck ){
 		};
 	};
 	
+// Find the smallest value in an array that is greater than a given number.
+	var array = function ( arrayOf ){
+		var arrayName = [2, 4, 6, 8, 10];
+		return library.arrayOf = arrayName.indexOf(8);
+		};
+
+// Given a string that is a list of things separated by a given string, as well as another string separator , return a string with the first separator changed to the second: "a,b,c" + "," + "/" ➜ "a/b/c".
+	var stringSep = function (string, past, present) {
+		var stringOne = string,
+		end = new RegExp(past, "g"); // RegExp: Creates a regular expression object for matching text with a pattern.
+		stringOne = stringOne.replace(end, present);
+		return library.sting = stringOne;
+	};
+	
 
 	
 	
@@ -108,6 +122,8 @@ var emailAddy = function ( emailCheck ){
 	"phoneNum": phoneNum,
 	"urlString": urlString,
 	"emailAddy": emailAddy,
+	"array": array,
+	"stringSep": stringSep
 	};
 };
 	
@@ -123,7 +139,9 @@ library.urlString(true);
 
 library.emailAddy("checkyoself@prodigy.com");
 
+library.array(2);
 
+library.stringSep("a, b, c", ",", "/");
 
 
 console.log(library);
