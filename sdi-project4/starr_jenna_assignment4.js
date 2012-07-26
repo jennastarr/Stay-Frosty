@@ -1,10 +1,10 @@
 alert("Project 4 the ReMix!");
 
 
-// 2. Format a number to use a specific number of decimal places, as for money: 2.1 ➜ 2.10
+// 1. Format a number to use a specific number of decimal places, as for money: 2.1 ➜ 2.10
 /*
 A code for displaying limited decimal points. This code acts as a boundary set when displaying
-number with numerous decimal points. You are able to simply adjust the "toFixed" are to set
+number with numerous decimal points. You are able to simply adjust the "toFixed" area to set
 the limit of decimal places you would like shown.
 */
 
@@ -24,7 +24,7 @@ the limit of decimal places you would like shown.
 */
 	var phoneNum = function ( number ) {
 		if ( /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/) {
-		return library.number = 816-867-5309;
+		return library.number = 8168675309;
 		} else {
 		return library.number = false;
 		};
@@ -36,6 +36,8 @@ the limit of decimal places you would like shown.
 	return{
 	"decimal": decimal,
 	"phoneNum": phoneNum,
+	};
+};
 	
 	
 // Library resource. Calling point for the code.	
@@ -46,3 +48,9 @@ library.decimal(723.1980);
 
 // Problem 2
 library.phoneNum(true);
+
+console.log(library);
+
+
+var motivation = "Keep it moving!"
+console.log(motivation);
