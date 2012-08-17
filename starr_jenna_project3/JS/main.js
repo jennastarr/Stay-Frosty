@@ -163,8 +163,6 @@ window.addEventListener("DOMContentLoaded", function (){
 
 
 	function saveData(key){
-
-		
 		if(!key){
 		var id = Math.floor(Math.random()*1000000001);
 		} else {
@@ -182,7 +180,7 @@ window.addEventListener("DOMContentLoaded", function (){
 			item.difficulty		= ["<b>Difficulty:</b>", $('difficulty').value];
 			item.range 			= ["<b>Quantity Range:</b>", $('range').value];
 			item.favorite		= ["<b>Favorite:</b>", isFavorite];
-			item.date			= ["<b>Date Purchased:</b>", $('date').value];
+			item.date			= ["<b>Date Found:</b>", $('date').value];
 			item.notes			= ["<b>Notes:</b>", $('notes').value];
 
 		localStorage.setItem(id, JSON.stringify(item));
@@ -219,7 +217,6 @@ window.addEventListener("DOMContentLoaded", function (){
 			makeList.appendChild(makeli);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
-			
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeli.appendChild(makeSubList);
@@ -274,7 +271,7 @@ window.addEventListener("DOMContentLoaded", function (){
 				"difficulty"	:	["Difficulty:","7"],
 				"range"			:	["Quantity Range:","8"],
 				"favorite"		:	["Favorite:","no"],
-				"date"			:	["Date :","11-11-2011"],
+				"date"			:	["Date:","11-11-2011"],
 				"notes"			:	["Notes:","They just came out of nowhere."]
 
 			},
@@ -288,7 +285,7 @@ window.addEventListener("DOMContentLoaded", function (){
 				"difficulty"	:	["Difficulty:","2"],
 				"range"			:	["Quantity Range:","0"],
 				"favorite"		:	["Favorite:","yes"],
-				"date"			:	["Date Purchased:","1-11-2010"],
+				"date"			:	["Date:","1-11-2010"],
 				"notes"			:	["Notes:","Barely found anything around here except a striped sweater."]
 
 			},
@@ -302,7 +299,7 @@ window.addEventListener("DOMContentLoaded", function (){
 				"difficulty"	:	["Difficulty:","0"],
 				"range"			:	["Quantity Range:","0"],
 				"favorite"		:	["Favorite:","yes"],
-				"date"			:	["Date Purchased:","10-31-2003"],
+				"date"			:	["Date:","10-31-2003"],
 				"notes"			:	["Notes:","Nice place to rest, made some s'mores."]
 
 			}
@@ -317,26 +314,28 @@ window.addEventListener("DOMContentLoaded", function (){
 
 	function makeEditDeleteLinks(key, linksli){
 		var editLink = document.createElement('a');
-		editLink.href = "#";
-		editLink.key = key;
+			editLink.href = "#";
+			editLink.key = key;
 		var editText = "Edit Item";
-		editLink.addEventListener("click", editItem);
-		editLink.innerHTML = editText;
-		linksli.appendChild(editLink);
+			editLink.addEventListener("click", editItem);
+			editLink.innerHTML = editText;
+			linksli.appendChild(editLink);
 
 		var brtag = document.createElement('br');
-		linksli.appendChild(brtag);
+			linksli.appendChild(brtag);
+
+
 
 		var deleteLink = document.createElement('a');
-		deleteLink.href = "#";
-		deleteLink.key = key;
+			deleteLink.href = "#";
+			deleteLink.key = key;
 		var deleteText = "Delete Selection";
-		deleteLink.addEventListener("click", deleteItem);
-		deleteLink.innerHTML = deleteText;
-		linksli.appendChild(deleteLink);
+			deleteLink.addEventListener("click", deleteItem);
+			deleteLink.innerHTML = deleteText;
+			linksli.appendChild(deleteLink);
 
 		var hrTag= document.createElement('hr');
-		linksli.appendChild(hrTag);
+			linksli.appendChild(hrTag);
 
 	}
 
@@ -347,27 +346,27 @@ window.addEventListener("DOMContentLoaded", function (){
 
 		toggleControls("off");
 
-		$('itemtypes').value = item.itemtype[1];
-		$('undeads').value = item.undead[1];
-		$('location').value = item.location[1];
-		$('description').value = item.description[1];
-		$('speed').value = item.speed[1];
-		$('taste').value = item.taste[1];
-		$('difficulty').value = item.difficulty[1];
-		$('range').value = item.range[1];
+			$('itemtypes').value = item.itemtype[1];
+			$('undeads').value = item.undead[1];
+			$('location').value = item.location[1];
+			$('description').value = item.description[1];
+			$('speed').value = item.speed[1];
+			$('taste').value = item.taste[1];
+			$('difficulty').value = item.difficulty[1];
+			$('range').value = item.range[1];
 		if (item.favorite[1] == "yes"){
 			$('favorite').setAttribute('checked', 'checked');
 		}
-		$('date').value = item.date[1];
-		$('notes').value = item.notes[1];
+			$('date').value = item.date[1];
+			$('notes').value = item.notes[1];
 
 
-		save.removeEventListener("click", saveData);
-		$('submit').value = "Edit Selection";
+			save.removeEventListener("click", storeData);
+			$('submit').value = "Edit Selection";
 		var editSubmit = $('submit');
 
-		editSubmit.addEventListener("click", validate);
-		editSubmit.key = this.key;
+			editSubmit.addEventListener("click", validate);
+			editSubmit.key = this.key;
 
 	}
 
