@@ -1,6 +1,6 @@
 /** 
 Jenna Starr
-VFW Web Application Part II
+VFW Web Application
 Term 1207 
 **/
 
@@ -9,7 +9,7 @@ Term 1207
 
 body {
 
-	background-color: #c9c9c9;
+	background-color: #4D4D4D;
 	font-family: 'Metal Mania', cursive;
 }
  div[id=browse]{
@@ -26,14 +26,14 @@ a[id=add]{
 h1 {
 	text-align: center;
 	font-family: 'Metal Mania', cursive;
-	font-size: 18px;
-	color: rgba(8,8,8,0.5);
+	font-size: 30px;
+	color: #191919;
 	margin-bottom: 20px;
 	padding: 5px;
-	background-color: #d7d9de;
+	background-color: #E6E6E6;
 	border-style: ridge;
 	border-width: 2px;
-	border-color: gray
+	border-color: #B2B2B2;
 	font-weight: bold;
 	border-radius: 10px; 
 	text-shadow: 2px 1px 2px #888;
@@ -143,24 +143,26 @@ select[id=location]{
 	width: 45px;
 	margin-left: 22px;
 }
-select[id=dglide]{
+select[id=speed]{
 	width: 45px;
-	margin-left: 30px;
+	margin-left: 0px;
 
 }
-select[id=dturn]{
+select[id=taste]{
 	width: 45px;
-	margin-left: 31px;
+	margin-left: 25px;
 
 }
-select[id=dfade]{
+select[id=difficulty]{
 	width: 45px;
-	margin-left: 30px;
+	margin-left: 0px;
 
 }
 
 legend {
 	font-family: 'Cantora One', sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
 }
 
 textarea {

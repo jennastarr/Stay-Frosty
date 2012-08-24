@@ -1,6 +1,6 @@
 /** 
 Jenna Starr
-VFW Web Application Part II
+VFW Web Application
 Term 1207 
 **/
 
@@ -101,8 +101,8 @@ window.addEventListener("DOMContentLoaded", function (){
 	};
 
 	
-	var itemtypes = ["-- Option --","Food", "Weapon", "Shelter"],
-		undeads = ["-- Undead --","No Worries.","I think we are gonna need a bigger bat!","RUNNNNNN!!!!!","Why is that guy wearing a hockey mask?","Yes","No","Wait i hear music, don't go in there!"],
+	var itemtypes = ["Option","Food", "Weapon", "Shelter"],
+		undeads = ["Undead","No Worries.","I think we are gonna need a bigger bat!","RUNNNNNN!!!!!","Why is that guy wearing a hockey mask?","Yes","No","Wait i hear music, don't go in there!"],
 		speed = [1,2,3,4,5,6,7,8,9,10,11,12,13],
 		taste = [1,2,3,4,5,6],
 		difficulty = [1,2,3,4,5,6,7,8,9,10,11,12,13],
@@ -153,7 +153,7 @@ window.addEventListener("DOMContentLoaded", function (){
 				$('clearLink').style.display 	="inline";
 				$('displayLink').style.display 	="none";
 				$('addItemLink').style.display 	="none";
-				$('item').style.display 		="none";
+				$('items').style.display 	    ="none";
 				break;
 
 			default:
@@ -162,7 +162,7 @@ window.addEventListener("DOMContentLoaded", function (){
 	}
 
 
-	function saveData(key){
+	function storeData(key){
 		if(!key){
 		var id = Math.floor(Math.random()*1000000001);
 		} else {
@@ -387,14 +387,14 @@ window.addEventListener("DOMContentLoaded", function (){
 
 		var msgError = [];
 
-		if (getItemtype.value === "-- Item Type --"){
+		if (getItemtype.value === "Item Type"){
 			var itemtypeErr = "Please Select a Item Type";
 			getItemtype.style.border = "1px solid red";
 			
 			msgError.push(itemtypeErr);		
 		}
 
-		if (getUndead.value === "-- Undead --"){
+		if (getUndead.value === "Undead"){
 			var mfgErr = "Please Select a Undead";
 			getUndead.style.border = "1px solid red";
 
@@ -418,7 +418,7 @@ window.addEventListener("DOMContentLoaded", function (){
 		e.preventDefault();
 		return false;
 		} else {
-			saveData(this.key);
+			storeData(this.key);
 
 		}
 
