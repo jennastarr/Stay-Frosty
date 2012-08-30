@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--Jenna Starr-->
-<!--VFW Web Application-->
-<!--Term 1207-->
+<!--MiU Web Application-->
+<!--Term 1208-->
 
 
 <html>
@@ -28,25 +28,27 @@
 	<body src="">
 	<h1><img src="Images/ApocaLystLogo.png" alt="Logo" width="150" height="200" /></h1>
 	
-		<h1>Add Item</h1>
-			<div id="links"/>
-				<a href="#" id="displayLink">Display Data</a>
-				<a href="#" id="clearLink">Clear Stored Data</a>
-				<a href="additem.html" id="addItemLink" style="display:none;">Add Item</a>
-			</div>
+		<h1 id="btn" align="center">
+		   			<span id="browse">Browse Categories:</span><br/><br/>
+		      		 <img src="Images/burger.png" width="40px" height="40px">
+		      		 <img src="Images/gun.png" width="40px" height="40px">
+		       		<img src="Images/shelter.png" width="40px" height="40px">
+
+		</h1>
+		
 		<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
 			<p>				
 			   <input type="search" id="search" value="Quick Search Here" name="search" size="25" maxlength="25" />
 			   <input type="submit" name="Submit" id="Submit" value="Submit"> 
 			</p>
 		</form>
-			<p id="btn" align="center">
-		   			<span id="browse">Browse Categories:</span><br/><br/>
-		      		 <img src="Images/burger.png" width="40px" height="40px">
-		      		 <img src="Images/gun.png" width="40px" height="40px">
-		       		<img src="Images/shelter.png" width="40px" height="40px">
-
-		   	</p>
+			
+			<div id="links"/>
+				<a href="#" id="displayLink">Display Data</a>
+				<a href="#" id="clearLink">Clear Stored Data</a>
+				<a href="additem.html" id="addItemLink" style="display:none;">Add Item</a>
+			</div>
+		
 	
 		<form action="#" method="post" id="addItemForm"/>
 			<fieldset>
