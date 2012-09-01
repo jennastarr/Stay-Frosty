@@ -1,0 +1,202 @@
+/** 
+Jenna Starr
+VFW Web Application
+Term 1207 
+**/
+
+
+
+
+body {
+
+	background-color: #4D4D4D;
+	font-family: 'Metal Mania', cursive;
+}
+ div[id=browse]{
+ 	margin-top: 10px;
+ }
+
+a[id=add]{
+	text-align: center;
+	font-family: 'Metal Mania', cursive;
+	font-size: 22px;
+
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Metal Mania', cursive;
+	font-size: 30px;
+	color: #191919;
+	margin-bottom: 20px;
+	padding: 5px;
+	background-color: #B2B2B2;
+	border-style: ridge;
+	border-width: 2px;
+	border-color: #B2B2B2;
+	font-weight: bold;
+	border-radius: 10px; 
+	text-shadow: 2px 1px 2px #888;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.2);
+}
+
+div[id=links]{
+	text-align: center;
+
+}
+a[id=displayLink] {
+	font-family: 'Cantora One', sans-serif;
+	margin-right: : 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+a[id=clearLink]{
+	font-family: 'Cantora One', sans-serif;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+
+}
+
+a[id=addItemLink]{
+	font-family: 'Cantora One', sans-serif;
+	margin-right: 20px;
+	margin-left: 20px;	
+	margin-bottom: 20px;
+}
+
+
+
+li {
+	font-family: 'Metal Mania', cursive;
+
+	list-style-type: none;
+	margin: 0 0 0 0; 
+	padding: 2 0 0 0; 
+
+}
+
+p[id=browse]{
+	text-align: center;
+	font-family: 'Metal Mania', cursive;
+	font-size: 20px;
+	color: rgba(8,8,8,0.5);
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: #d7d9de;
+	border-style: ridge;
+	border-width: 4px;
+	border-color: black
+	font-weight: bold;
+	border-radius: 10px; 
+	text-shadow: 2px 1px 2px #888;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.2);
+}
+
+hr{
+	background-color: #5e5e5e;
+	height: 2px;
+}
+
+input[id=search]{
+	width:290px;
+	margin-left: 5px;
+
+}
+
+input[id=range]{
+	display:block;
+	width: 250px;
+}
+
+input[id=itemtype] {
+	width: 290px;
+}
+input[id=color] {
+	width: 110px;
+	margin-left: 60px;
+}
+input[id=description] {
+	width: 110px;
+	margin-left: 22px;
+
+}
+
+input[id=favorite]{
+margin-left: 10px;
+}
+input[type=date] {
+	width: 150px;
+	display: block;
+}
+
+select[id=itemtype] {
+	width: 110px;
+	margin-left: 35px;
+}
+select[id=undead]{
+	width: 110px;
+	margin-left: 9px;
+}
+select[id=location]{
+	width: 45px;
+	margin-left: 22px;
+}
+select[id=speed]{
+	width: 45px;
+	margin-left: 0px;
+
+}
+select[id=taste]{
+	width: 45px;
+	margin-left: 25px;
+
+}
+select[id=difficulty]{
+	width: 45px;
+	margin-left: 0px;
+
+}
+
+legend {
+	font-family: 'Cantora One', sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+
+textarea {
+	width: 150px;
+	display: block;
+}
+
+div[id=submits]{
+text-align: center;
+}
+
+i {
+	margin-left: 15px;
+}
+
+ul{
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 0;
+	padding-top: 5px;
+	border-style: none;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0;
+	margin-top: 0px;
+	background-color: #e0e0e0; 
+	border-radius: 5px;
+
+}
+
+span[id=errors]{
+	font-family: 'Cantora One', sans-serif;
+	font-size:small ;
+	color: red;
+}
+
+
