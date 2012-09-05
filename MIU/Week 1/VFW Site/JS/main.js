@@ -188,7 +188,7 @@ window.addEventListener("DOMContentLoaded", function (){
 
 	}
 
-
+	//Writes data from local storage to the browser.
 	function getData(){
 		toggleControls("on");
 		if (localStorage.length === 0 ){
@@ -257,61 +257,16 @@ window.addEventListener("DOMContentLoaded", function (){
 		imgLi.appendChild(newImg)
 
 	}
-
-
-	function autoAddItems(){
-		json = {
-			"item1" : {
-				"itemtype"		: 	["Item Type:","Weapon"],
-				"undead"		:	["Undead:","Wait i hear music, don't go in there!"],
-				"location"		:	["Location:","Warehouse"],
-				"description"	:	["Description:","Creepfest"],
-				"speed"			:	["Speed:","9"],
-				"taste"			:	["Taste:","0"],
-				"difficulty"	:	["Difficulty:","7"],
-				"range"			:	["Quantity Range:","8"],
-				"favorite"		:	["Favorite:","no"],
-				"date"			:	["Date:","11-11-2011"],
-				"notes"			:	["Notes:","They just came out of nowhere."]
-
-			},
-			"item2" : {
-				"itemtype"		: 	["Item Type:","Food"],
-				"undead"		:	["Undead:","No Worries."],
-				"location"		:	["Location:","Elm Street"],
-				"description"	:	["Description:","Hopscotch in chalk drawn everywhere."],
-				"speed"			:	["Speed:","3"],
-				"taste"			:	["Taste:","1"],
-				"difficulty"	:	["Difficulty:","2"],
-				"range"			:	["Quantity Range:","0"],
-				"favorite"		:	["Favorite:","yes"],
-				"date"			:	["Date:","1-11-2010"],
-				"notes"			:	["Notes:","Barely found anything around here except a striped sweater."]
-
-			},
-			"item3" : {
-				"itemtype"		: 	["Item Type:","Shelter"],
-				"undead"		:	["Undead:","Why is that guy wearing a hockey mask?"],
-				"location"		:	["Location:","Crystal Lake"],
-				"description"	:	["Description:","Oddly restful"],
-				"speed"			:	["Speed:","0"],
-				"taste"			:	["Taste:","3"],
-				"difficulty"	:	["Difficulty:","0"],
-				"range"			:	["Quantity Range:","0"],
-				"favorite"		:	["Favorite:","yes"],
-				"date"			:	["Date:","10-31-2003"],
-				"notes"			:	["Notes:","Nice place to rest, made some s'mores."]
-
-			}
-		}
-		for (var n in json){
-		var id = Math.floor(Math.random()*1000000001);
-		localStorage.setItem(id, JSON.stringify(json[n]));
+	//Adds dummy data for autofill
+function autoAddItems() {
+		for(var n in json) {
+			var id = Math.floor(Math.random()*1000000001);
+			localStorage.setItem(id, JSON.stringify(json[n])); 
 		}
 	}
 
-
-
+	
+	//Creates the edit and delete links for eack stored item when displayed.
 	function makeEditDeleteLinks(key, linksli){
 		var editLink = document.createElement('a');
 			editLink.href = "#";
