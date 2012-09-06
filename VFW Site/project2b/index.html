@@ -1,0 +1,167 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>ApocaLyst Blue Pill</title>
+
+	<!--mobile viewport optimized -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--cleartype for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!--stylesheets under here-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Metal+Mania|Cantora+One' rel='stylesheet' type='text/css'/>
+	<link href="http://fonts.googleapis.com/css?family=Terminal+Dosis:400,300" rel="stylesheet" type="text/css"/>
+
+	<!--javascript is normally at the end of the bodys-->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ApocaLyst Blue Pill</h1>
+		<!-- this close header-->
+		</div> 
+		<br />
+			<!-- start cta -->
+			<p align="center">
+			<img src="images/ApocaLystLogo.png" width="200px" height="200px">
+
+		   </p>
+		   <br />
+		   <br />
+		   <br />
+		   <br />
+		   <p id="pg1_link">
+		       <a href = "additem.html" data-ajax="false">Enter ApocaLyst Red Pill</a>
+		       <a href = "form.html">Enter ApocaLyst Blue Pill</a>
+		   </p>
+
+		   	<div data-role="content" data-add-back-btn="true">
+
+			<h2 align="center">When a problem comes along you must list it</h2>
+
+  		   <div data-role="listview" data-filter="true" />
+		   	<div data-role="collapsible" >
+		      <h3>Shelter</h3>
+		      	<p>Shack</p>
+		      	<p>Basement</p>
+		      	<p>Base</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Weapon</h3>
+		      	 <p>Bat</p>
+		     	 <p>ShotGun</p>
+		      	 <p>Knife</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Food</h3>
+		      	<p>Burger</p>
+		      	<p>Salad</p>
+		      	<p>Chicken</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Energy</h3>
+			      <p>Red Bull</p>
+			      <p>Coffee</p>
+			      <p>Mountain Dew</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Item Holder</h3>
+			      <p>Fannypack</p>
+			      <p>Paper Bag</p>
+			      <p>Burlap Sack</p>
+			      <p>Backpack</p>
+		    </div>
+
+		 </div> 
+		</div>		
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="../index.html" data-icon="home">Red Pill App</a></li>
+					<li><a href="project2b/index.html" class="ui-btn-active" data-icon="forward">Blue Pill App</a></li>	
+				</ul>
+		   </div>
+
+	</div>
+	</div>
+
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
+		</div>
+
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>One Window Drilldown</h2>
+
+
+
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Shelter</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Weapon</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Food</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Energy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Item Holder</a></p>
+
+		   </p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+
+	</div>
+	<div data-role="page" id="under_construction" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Under Construction</h1>
+		</div>
+
+		<div data-role="content">
+			<br />
+			<h1 align="center">
+
+			       <img src="images/cta_logo.png" width="200px" height="200px">
+			       <p>This Page is Under Construction</p>
+
+		    </h1>
+
+		 <br />
+		 <br /> 
+		 </div>
+
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Beware of the Foot</h4>
+		</div>
+
+	</div>
+
+	<!--javascript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>

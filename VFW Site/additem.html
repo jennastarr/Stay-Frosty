@@ -1,0 +1,100 @@
+<!doctype>
+
+<html>
+
+<head>
+
+		<!--character set--> 
+			<meta charset="utf-8" />
+			<meta name="description" content="This is my HTML5 document for an App." />
+			<meta name="keywords" content="html5, mobile development, Full Sail University" />
+			<meta name="robots" content="index, follow" />
+			<meta name="viewport" content="user-scalable = no, width = device-width" />
+
+		<!--title-->		
+		<title>ApocaLyst</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Metal+Mania|Cantora+One' rel='stylesheet' type='text/css'/>
+		<link href="http://fonts.googleapis.com/css?family=Terminal+Dosis:400,300" rel="stylesheet" type="text/css"/>
+	
+</head>
+
+		<!--body-->
+<body>
+
+<div id="contain">
+			<h1>Items</h1>
+			<nav>
+			<a href="#" id="clearData">Clear Stored Data</a>
+			<a href="#" id="displayData">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add Item</a>
+			</nav>
+	<div id="wrap">
+	<div id="innerForm">
+		<fieldset id="theField">
+			<legend>Item Info</legend>
+				<form method="post" enctype="text/plain" id="myform" name="f1" action="#" data-ajax="false">
+				  <div id="categories"></div>
+				  <ul id="errors"></ul>
+					<p>Item:				
+						<input type="text" id="itName" name="title" size="40" maxlength="40" onfocus="fieldColor_1();"/><br/> 
+					</p>
+					<p>Date Found:<input type="text" id="dateName" name="dateFound" size="10" maxlength=10 onfocus="fieldColor_3();"/> 
+					</p>
+					<p>Was this?</p>
+						<ul id="boxesCk">
+							<li><input type="checkbox" id="yes" name="found" value="found">Found</li>
+							<li><input type="checkbox" id="no" name="found" value="taken">Taken</li>
+						</ul>
+					<p>Was it?</p>
+						<label for="kept">Kept</label> 
+						<input type="radio" id="keptName" name="acquired" value ="Kept">
+						<label for="used">Used</label>
+						<input type="radio" id="usedName" name="acquired" value ="Used">			
+					<p>Want more?</p>
+						<label for="yes">yes</label> 
+						<input type="radio" name="viewed" value="yes" id="yes">
+						<label for="no">no</label>
+						<input type="radio" name="viewed" value="no" id="no">					
+					<p>Think you'll survive?</p>
+						<label for="yes">yes</label>
+						<input type="radio" name="watch" value ="yes" id="yes"> 
+						<label for="no">no</label>
+						<input type="radio" name="watch" value ="no" id="no">
+					</fieldset>	
+					<fieldset>
+					<legend>More Info</legend>					
+				   	<p id="rate">Rate likelihood of survival:</p></p>
+					   	<input type="radio" id="three" name="rate" value="3 stars"/>
+					   	<label for"3">3 stars</label>
+					   	<input type="radio" id="two" name="rate" value="2 stars"/>
+					   	<label for"2">2 stars</label>
+					   	<input type="radio" id="one"  name="rate" value="1 star"/>
+					   	<label for"1">1 star</label> 
+				   <br/>
+		<!--slider-->	
+				<div id="slider">		  
+				   		<label for="range-slider"><span id="amend">Recommend:<small>(range 1-10)</small></span></label>
+				   		<input type="range" name="range" id="range-slider" class="slider" min="0" max="10" step="1" value="0">
+				</div>
+		<!-- textarea-->							
+						<span id="box">Likes and dislikes about items:</span><br/>					
+						<textarea name ="notes" id="noteName" onfocus="fieldColor_4();" rows="5" cols="30" wrap></textarea><br/>
+		<!--submit/reset buttons-->
+						<input type="submit" id="submit" value="Submit" />
+						<input type="reset" id="reset" value="Reset" />
+			</form>	
+	      </fieldset>
+	      </div>
+	    
+	    </div> 
+	 
+	 </div> 
+   <script src="js/json.js" type="text/javascript"></script>	 
+   <script src="js/main.js" type="text/javascript"></script>		 
+ </body>
+
+
+
+
+</html>

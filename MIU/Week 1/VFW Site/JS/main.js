@@ -4,7 +4,7 @@ VFW Web Application
 Term 1207 
 **/
 
-
+	// Waits until the DOM is ready
 window.addEventListener("DOMContentLoaded", function (){
 
 
