@@ -1,0 +1,469 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>ApocaLyst</title>
+
+	<!--mobile viewport optimized-->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--ClearType for smoothing fonts-->
+	<meta http-equiv="cleartype" content="on">
+
+	<!--stylesheets-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Metal+Mania|Cantora+One' rel='stylesheet' type='text/css'/>
+	<link href="http://fonts.googleapis.com/css?family=Terminal+Dosis:400,300" rel="stylesheet" type="text/css"/>
+
+	<!--javascript is normally at the end of the body-->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ApocaLyst</h1>
+		</div>
+		<br />
+
+			<p align="center">
+			<img src="images/ApocaLystLogo.png" width="200px" height="200px">
+
+		   </p>
+		   <p id="pg1_link">
+		       <a href = "form.html">Click to Enter</a>
+		   </p>
+
+		   	<div data-role="content" data-add-back-btn="true">
+
+		   	<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#under_construction">
+			      <img src="images/shelter.png" width="60px" height="104">
+			      	<h3>Shelter</h3>
+			      	   <p>This Page is under Construction</p>
+		        </a>
+		      </li>
+		      <li>
+			      <a href ="#thumbnail_grid">
+			      	<img src="images/gun.png" width="60px" height="104">
+			         <h3>Weapon</h3>
+			      		<p>Pick your weapon, then pick your battle.</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#news_stream"><img src="images/burger.png" width="60px" height="104">
+			         <h3>News</h3></h3>
+			      		<p>Be prepared.</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Undead or Just Creepy</h3>
+			      		<p>This page is under construction</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Energy</h3>
+			      		<p>This page is under construction</p>
+		          </a>
+		      </li>
+		     
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Item Holder</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		      
+		      <li>
+			      <a href ="#news_stream"><img src="images/burger.png" width="60px" height="104">
+			         <h3>Food</h3></h3>
+			      		<p>Don't be so picky.</p>
+		          </a>
+		      </li>
+
+		   </ul>
+		</div>
+
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active">Red Pill App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">Blue Pill App</a></li>
+				
+				</ul>
+		   </div>
+
+	</div>
+	</div>
+
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
+		</div>
+
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>One Window Drilldown</h2>
+
+
+
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Shelter</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Weapon</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Food</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Energy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Item Holder</a></p>
+
+		   </p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+
+	</div>
+
+	<!--list inlay-->
+	<div data-role="page" id="listInlay" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ApocaLyst</h1>
+		</div>
+
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+			</form> 
+			<h2>When a problem comes along you must list it</h2>
+  		   
+
+		   	<p align="center">Browse Categories:</p>
+		   	<div data-role="collapsible" data-filter="true">
+		     <h3>Shelter</h3>
+		      <p>Shack</p>
+		      <p>Basement</p>
+		      <p>Base</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Weapon</h3>
+		      <p>Bat</p>
+		      <p>ShotGun</p>
+		      <p>Knife</p>
+		    </div>
+		    <div data-role="collapsible">
+			  <h3>Food</h3>
+		      <p>Burger</p>
+		      <p>Salad</p>
+		      <p>Chicken</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Energy</h3>
+		      <p>Red Bull</p>
+		      <p>Coffee</p>
+		      <p>Mountain Dew</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Item Holder</h3>
+			  <p>Fannypack</p>
+			  <p>Paper Bag</p>
+			  <p>Burlap Sack</p>
+			  <p>Backpack</p>
+		    </div>
+
+		   </p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Beware of the Foot</h4>
+		</div>
+
+	</div>
+
+	<!--under construction-->
+	<div data-role="page" id="under_construction" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Under Construction</h1>
+		</div>
+
+		<div data-role="content">
+			<br />
+			<h1 align="center">
+
+			       <img src="images/ApocaLystLogo.png" width="200px" height="200px">
+			       <p>This Page is Under Construction</p>
+
+		    </h1>
+
+		 <br />
+		 <br /> 
+		 </div>
+
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Beware of the Foot</h4>
+		</div>
+
+	</div>
+
+	<!--thumbnailgrid-->
+		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail Grid</h1>
+		</div>
+
+		<div data-role="content">
+
+			<h2 align="center">Thumbnail Grid</h2>
+			<br />
+		  	<div class="ui-grid-b" data-role="listview" data-filter="true">
+
+				<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/burger.png" width="90px" height="160px"><br/>Item</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/burger.png" width="90px" height="160px"><br/>Item</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/burger.png" width="90px" height="160px"><br/>Item</div>  	
+		  	</div> 
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/shelter.png" width="90px" height="160px"><br/>Item</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/shelter.png" width="90px" height="160px"><br/>Item</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/shelter.png" width="90px" height="160px"><br/>Item</div>
+		  	</div> 	
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/gun.png" width="90px" height="160px"><br/>Item</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/gun.png" width="90px" height="160px"><br/>Item</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/gun.png" width="90px" height="160px"><br/>Item</div>
+		  	</div>    	
+
+		  	</div> 	   
+
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Red Pill App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">Blue Pill App</a></li>
+			
+				</ul>
+		</div>
+
+		</div>
+
+		</div>
+		<div data-role="page" id="news_stream" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>News Stream</h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#">
+			      <img src="images/construction.png" width="55px" height="55" hspace="5px" vspace="15px">
+			      	<h3>Shelter</h3>
+			      	   <p><i><b>Mrs E</b></i> - Easy to find an apt. in NYC now.</p>
+			      	   <span><small>about 33 mins ago   --via Loud Speaker--</small></span>
+		        </a>
+		      </li>
+
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Weapon</h3>
+
+			      	   <p><i><b>Mrs E</b></i> - The only time I have been grateful for <br/>
+			      	   learning to drive a tank.</p>
+			      	   <span><small>about 6 hrs ago   --via Smoke Signals--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Shelter</h3>
+
+			      	   <p><i><b>Mr E</b></i> - Was in the carpool lane all day!<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 4 weeks ago   --via Scouting Party--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Shelter</h3>
+
+			      	   <p><i><b>Mr E</b></i> -Do you think it's bad I am happy here is no traffic?</p>
+			      	   <span><small>about 7 days ago   --via Billboard Sign--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Weapon</h3>
+
+			      	   <p><i><b>Mrs E</b></i> - Chainsaws can be so diverse in use.</p>
+			      	   <span><small>about 14 hrs ago   --via Vroom--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Food</h3>
+
+			      	   <p><i><b>Ms Link</b></i> - Braiinnnnnnnnnnnsssss</p>
+			      	   <span><small>about 3 days ago   --via Groans Weekly--</small></span>
+		      	  </a>
+		      </li>
+		       <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Weapon</h3>
+
+			      	   <p><i><b>Ms Link</b></i> - I am so cold and can't even lift my gun.<br/>
+			      	   Hope no one else try to break in.</p>
+			      	   <span><small>about 4 days ago   --via SoCold@home--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="55px" height="73" >
+			         <h3>Shelter</h3>
+
+			      	   <p><i><b>Ms Link</b></i> - Creepy guy broke into my house he didn't<br/>
+			      	   try to take anything but he bit me...weird.</p>
+			      	   <span><small>about 5 days ago   --via Creepy@home--</small></span>
+		      	  </a>
+		      </li>
+
+
+		   </ul>
+		</div>
+
+
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Red Pill App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">Blue Pill App</a></li>
+				</ul>
+		   </div>
+		   </div>
+		   </div>
+
+	<div data-role="page" id="my_form" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>ApocaLyst</h1>
+		</div>
+
+		<div data-role="content">
+
+			<h2 align="center">Item Info Here</h2>
+			<br />
+
+		  		<form action="" method="post" id="project3form" data-ajax="true">
+		  			<label for="genre" class="select"></label> 
+						<select name="genre" id="genre" data-theme="b"> 
+							 <option selected value="select" data-role="placeholder">Select Item</option> 
+							 <option value="shelter">Shelter</option> 
+							 <option value="weapon">Weapon</option>
+							 <option value="food">Food</option>
+							 <option value="energy">Energy</option>
+							 <option value="itemHolder">Item Holder</option>
+						</select>
+
+						<br />
+
+						<div data-role="fieldcontain">
+							<label for="title">Item:</label>
+							<input type="text" name="title" id="title" class="required" placeholder="Item" value=""/>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="mydate">Date:</label>	
+							<input name="mydate" id="mydate" type="date" class="required" data-role="datebox" data-options='{"mode": "calbox", 'calTodayButton': true}'>    			
+						</div>
+
+				<input type="checkbox" value="found" name="checkbox-1" id="checkbox-0" class="custom" class="required" data-theme="b"/>
+							<label for="checkbox-0">Found</label>
+				<input type="checkbox" value="taken" name="checkbox-1" id="checkbox-2" class="custom" data-theme="b"/>
+							<label for="checkbox-2">Taken</label>
+
+					<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Have you been here before?</legend>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-1">Yea...what of it</label>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" data-theme="a"/>
+					     	<label for="radio-choice-2">Uh, No</label>	
+					</fieldset>
+					</div>
+
+					<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Would you go there again?</legend>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-2">Yes, I would</label>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-3" value="choice-3" data-theme="a"/>
+					     	<label for="radio-choice-3">No, I would not</label>
+					</fieldset>
+					</div>
+
+						<div data-role="fieldcontain">
+							<label for="slider-1">Input slider:</label>
+							<input type="range" name="slider-1" id="slider-1" value="0" min="0" max="10" data-theme="a" data-track-theme="b" />
+						</div>
+						<div data-role="fieldcontain">
+								<label for="textarea-a">Notes:</label>
+									<textarea name="notes" id="textarea-a" placeholder="Place any notes or comments here for future reference.">
+									</textarea>
+						</div>
+
+						<div data-role="fieldcontain">
+							<input type="reset" value="reset" data-theme="a"> 
+							<input type="submit" value="submit" data-theme="b">
+		  				</div>
+		  		</form> 	   
+
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Red Pill App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">Blue Pill App</a></li>
+				</ul>
+		</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+	</div>
+
+
+
+
+	<!--javascript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+</html>
