@@ -1,39 +1,55 @@
-/* 
-Jenna Starr
-MiU
-Web App
-1208
-*/ 
+
 
  
    body {
    		  border: 1px solid #3d1efb; 
-		  font-family: 'Metal Mania', cursive;
+		  font-family: Arial, Tacoma, Geneva, sans serif;
    		  width: 320px;
    		  margin: auto;
    }
    
   #wrap {
-   		 background-color: #4d4d4d;
+   		 background-color: #d4e1f2;
    		 margin: 0;
    		 padding: 10px;		   
    }
    
+   div.demo {
+	padding:12px;
+	
+}
+   
    #contain {
    			 margin: 0;
    			 padding: 0;
-   			 background: #b2b2b2;
+   			 background: #d4e1f2;
    }
    #front_wrap {
    				border: 1px solid blue;
    				
    }
       
-   h1 {	
-   	   color: #3d1efb;
-	   background: #b2b2b2; 
-	   font-size: 24px;                     
-	   text-align: center;		  
+	h1 {
+
+		margin-top: -4px;
+		margin-bottom: 1px;
+		background: none;                    
+		text-align: left;		  
+   }
+   
+   p#brand {
+   			margin-top: -49px;
+   			margin-bottom: 8px;
+   			text-align: center;   		     			
+   }
+   
+   #required {
+   			  font-size: 13px;
+   			  font-weight: 600;
+   }
+   
+   #genre {
+   		   font-size: 16px;
    }
    
    #pg1 {
@@ -55,6 +71,7 @@ Web App
    
    #browse {
    			text-align: left;
+   			
    }  
    
   #items {
@@ -63,7 +80,7 @@ Web App
    		   font-size: 15px;
    		   line-height: 2em;
    		   border-bottom: 2px solid red; 
-   		   background-color: #b2b2b2;   		    
+   		   background-color: #d4e1f2;   		    
    }
    
   #errors {
@@ -114,7 +131,7 @@ Web App
    			 text-decoration: none;
    			 text-align: center;
    		     padding: 10px 0 0 22px;
-   		     background: #b2b2b2;
+   		     background: #dce5ea;
    }
    
    ul li ul {
@@ -141,7 +158,7 @@ Web App
    }
    
    #categories {
-   				font-size: 20px; 
+   				font-size: 20px;
    	            color: #3d1efb;
    	            text-align: center;  
    			    padding: 0;
@@ -186,6 +203,15 @@ Web App
   
  #boxesCk {
  			font-size: 13px;
- }        
+ } 
+ 
+ #submit {	color: white;
+ 			padding: 10px;
+ 			background: #7098bf;
+ }       
      
+ #reset {
+ 		  margin-left: 160px;
+ 		  background: #d4e1f2;
+ } 
    

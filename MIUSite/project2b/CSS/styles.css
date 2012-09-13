@@ -1,10 +1,4 @@
-/* 
-Title: styles.css
-Visual Frameworks
-Project 4 Web-App Part 4
-Carol Gaylor
-Feb.23,2012 
-*/ 
+
 
  
    body {
@@ -46,11 +40,13 @@ Feb.23,2012
    }
    
    #pg1_link {
+   			  display: inline;
    			  font-size: 25px;
-   			  font-weight: bold; 
+   			  font-weight: bold;
+   			  font-color: red; 
    		      text-align: center;
    		      margin-top: -70px;
-   		      margin-left: 130px;
+   		      margin-left: 90px;
    }
    
    #btn {
@@ -181,3 +177,5 @@ Feb.23,2012
  			font-size: 13px;
  }        
      
+   
+   
