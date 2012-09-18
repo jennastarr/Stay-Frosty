@@ -21,15 +21,15 @@
    }
    #front_wrap {
    				border: 1px solid blue;
-   				/*background-color: #d4e1f2;*/
+   				background-color: #d4e1f2;
    }
       
    h1 {	
-   	    color: #3d1efb;
-   	/*  border-top: 2px  solid red;
-	   border-bottom: 2px  solid red;*/
-	   /*padding: 10px 0 10px 10px;*/
-	   background: #dce5ea; 
+   	   color: #3d1efb;
+   	   border-top: 2px  solid blue;
+	   border-bottom: 2px  solid blue;
+	   padding: 10px 0 10px 10px;
+	   background: #2e2e2e; 
 	   font-size: 24px;                     
 	   text-align: center;		  
    }
