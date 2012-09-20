@@ -25,13 +25,18 @@
    }
       
    h1 {	
-   	   color: #3d1efb;
-       border-top: 2px  solid blue;
-	   border-bottom: 2px  solid blue;
+   
+   		margin-top: -4px;
+		margin-bottom: 1px;
+		background: none;                    
+		text-align: left;
+   	   /*color: #3d1efb;
+       border-top: 2px  solid black;
+	   border-bottom: 2px  solid black;
 	   padding: 10px 0 10px 10px;
 	   background: #2e2e2e; 
 	   font-size: 24px;                     
-	   text-align: center;		  
+	   text-align: center;	*/	  
    }
    
    #pg1 {
