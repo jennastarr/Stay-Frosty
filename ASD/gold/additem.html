@@ -1,0 +1,105 @@
+<!doctype>
+
+<html>
+
+<head>
+
+		<!--character set--> 
+
+			<meta charset="utf-8" />
+			<meta name="description" content="This is my HTML5 document for an App." />
+			<meta name="keywords" content="html5, mobile development, Full Sail University" />
+			<meta name="robots" content="index, follow" />
+			<meta name="viewport" content="user-scalable = no, width = device-width" />
+
+		<!--title-->		
+		<title>ApocaLyst</title>
+		
+		<!--stylesheets-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+
+</head>
+
+<body>
+
+<div id="contain">
+			<h1>Info Gathering</h1>
+			<nav>
+			<a href="#" id="clearData">Clear Stored Data</a>
+			<a href="#" id="displayData">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Items</a>
+			</nav>
+	<div id="wrap">
+	<div id="innerForm">
+		<fieldset id="theField">
+			<legend>Item Info</legend>
+				<form method="post" enctype="text/plain" id="myform" name="f1" action="#">
+				  <div id="categories"></div>
+				  <ul id="errors"></ul>
+					<p>Item name:				
+						<input type="text" id="itName" name="item" size="40" maxlength="40" onfocus="fieldColor_1();"/><br/> 
+					</p>
+					<p>
+						Date found:<input type="text" id="fndName" name="dateFound" size="10" maxlength=10 onfocus="fieldColor_3();"/>
+					</p>
+					<p>This item was?</p>
+						<ul id="boxesCk">
+							<li><input type="checkbox" id="yes" name="taken" value="taken">Taken</li>
+							<li><input type="checkbox" id="no" name="taken" value="made">Made</li>
+						</ul>
+					<p>Was it?</p>
+						<label for="pointless">pointless</label> 
+						<input type="radio" id="pointName" name="acquired" value ="Pointless">
+						<label for="helpful">helpful</label>
+						<input type="radio" id="hlpflName" name="acquired" value ="Helpful">
+					<p>Have you used this item before?</p>
+						<label for="yes">yes</label> 
+						<input type="radio" name="used" value="yes" id="yes">
+						<label for="no">no</label>
+						<input type="radio" name="used" value="no" id="no">
+					<p>Would you use it again?</p>
+						<label for="yes">yes</label>
+						<input type="radio" name="again" value ="yes" id="yes"> 
+						<label for="no">no</label>
+						<input type="radio" name="again" value ="no" id="no">
+					</fieldset>	
+					<fieldset>
+					<legend>More Info</legend>					
+				   	<p id="rate">Rate it or it didn't happen:</p></p>
+					   	<input type="radio" id="three" name="rate" value="3 stars"/>
+					   	<label for"3">3 stars</label>
+					   	<input type="radio" id="two" name="rate" value="2 stars"/>
+					   	<label for"2">2 stars</label>
+					   	<input type="radio" id="one"  name="rate" value="1 star"/>
+					   	<label for"1">1 star</label> 
+				   <br/>
+		<!--slider-->	
+				<div id="slider">		  
+				   		<label for="range-slider"><span id="amend">Recommend:<small>(range 1-10)</small></span></label>
+				   		<input type="range" name="range" id="range-slider" class="slider" min="0" max="10" step="1" value="0">
+				</div>
+		<!--textarea-->							
+						<span id="box">Likes and dislikes about item(s):</span><br/>					
+						<textarea name ="notes" id="noteName" onfocus="fieldColor_4();" rows="5" cols="30" wrap></textarea><br/>
+		<!--submit/reset buttons-->
+						<input type="submit" id="submit" value="Submit" />
+						<input type="reset" id="reset" value="Reset" />
+			</form>	
+	      </fieldset>
+	      </div>
+	    </div>
+	 </div>
+   <script src="js/json.js" type="text/javascript"></script>	 
+   <script src="js/main.js" type="text/javascript"></script>		 
+ </body>
+
+
+
+
+</html>
