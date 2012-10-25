@@ -1,0 +1,420 @@
+ <!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>ApocaList Movies</title>
+	
+	<!--mobile viewport optimized-->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="cleartype" content="on">
+	
+	<!--stylesheets-->
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!--javascript is normally at the end of the body accept for the modernizer-->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+	
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>ApocaList Movies</h1>
+		</div>
+		<br />
+			
+			<p align="center">
+			<img src="images/ApocaLystLogo.png" width="150px" height="200px">
+			  
+		   </p>
+		   <p id="pg1_link">
+		       <a href = "form.html" data-ajax="false">Enter Form</a>
+		   </p>
+		 
+		   	<div data-role="content" data-add-back-btn="true">
+
+		   	<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#infoPage">
+			      <img src="images/construction.png" width="60px" height="104">
+			      <h3>Movie Information</h3>
+                  <p>Under Construction</p>
+
+		        </a>
+		      </li>
+    
+		      <li>
+			      <a href ="#thumbnail_grid">
+			      	<img src="images/construction.png" width="60px" height="104">
+			         <h3>Zombie Movies</h3>
+			      		<p>Take a look at the large selection of Movies</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#news_stream"><img src="images/construction.png" width="60px" height="104">
+			         <h3>ApocaList News</h3></h3>
+			      		<p>Is the end nigh? Check in and find out.</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#tabs"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Apocalyptic Highlights</h3>
+			      		<p>Read before it's to late.</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Apocalypse Movies</h3>
+			      		<p>This page is under construction</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Horror Movies</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			         <h3>Place Holder</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		       
+		   </ul>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="bronze/index.html" data-icon="forward">B App</a></li>
+				</ul>
+		   </div>
+		
+	</div>
+	</div>
+	
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>One Window Drilldown</h2>
+			
+		  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Apocalypse</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Zombies</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Vampires</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy Horror</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!--list-->
+		<div data-role="page" id="listInlay" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>ApocaList Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" />
+				</p>
+			</form> 
+			<h2>List</h2>
+  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		   	<div data-role="collapsible" data-filter="true">
+		      <h3>Horror</h3>
+		      <p>High Tension</p>
+		      <p>Nightmare on Elm Street</p>
+		      <p>The Exorcist</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Apocalypse</h3>
+		      <p>Mad Max</p>
+		      <p>Waterworld</p>
+		      <p>Twelve Monkeys</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Zombies</h3>
+		      <p>Zombieland</p>
+		      <p>28 Days Later</p>
+		      <p>Dead Snow</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Vampires</h3>
+		      <p>Nosferatu</p>
+		      <p>The Lost Boys</p>
+		      <p>From Dusk Till Dawn</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Comedy Horror</h3>
+		      <p>Attack of the Killer Tomatos</p>
+		      <p>Young Frankenstein</p>
+		      <p>Gremlins</p>
+		    </div>
+		    		      		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!--thumbnails-->
+				
+		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>The Grid</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<h2 align="center">The Grid</h2>
+			<br />
+		  	<div class="ui-grid-b" data-role="listview" data-filter="true">
+		  	
+				<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>Resident Evil</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>Zombieland</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>Shaun of the Dead</div>  	
+		  	</div> 
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>Dusk Till Dawn</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>Underworld</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>30 Days of Night</div>
+		  	</div> 	
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>The Book of Eli</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>I Am Legend</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>2012</div>
+		  	</div>    	
+		  	
+		  	</div> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Gold App</a></li>
+					<li><a href="bronze/index.html" data-icon="forward">Bronze App</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+		<div data-role="page" id="news_stream" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>News Stream</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#">
+			      <img src="images/shelter.png" width="55px" height="55" hspace="5px" vspace="15px">
+			      <h3>Shelter</h3>
+			      	   <p><i><b>Mrs E</b></i> - Easy to find an apt. in NYC now.</p>
+			      	   <span><small>about 33 mins ago   --via Loud Speaker--</small></span>
+		        </a>
+		      </li>
+		      <li>
+			      <a href ="#">
+			      	<img src="images/weapon.png" width="55px" height="55" hspace="5px" vspace="15px">
+			         <h3>Weapon</h3>
+					   <p><i><b>Mrs E</b></i> - The only time I have been grateful for <br/>
+			      	   learning to drive a tank.</p>
+			      	   <span><small>about 6 hrs ago   --via Smoke Signals--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/shelter.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Shelter</h3>
+			      	   <p><i><b>Mr E</b></i> - Was in the carpool lane all day!<br/></p>
+			      	   <span><small>about 4 weeks ago   --via Scouting Party--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/shelter.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Shelter</h3>
+			      	   <p><i><b>Mr E</b></i> -Do you think it's bad I am happy here is no traffic?</p>
+			      	   <span><small>about 7 days ago   --via Billboard Sign--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/weapon.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Weapon</h3>
+			      	   <p><i><b>Mrs E</b></i> - Chainsaws can be so diverse in use.</p>
+			      	   <span><small>about 14 hrs ago   --via Vroom--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/food.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Food</h3>
+			      	   <p><i><b>Ms Link</b></i> - Braiinnnnnnnnnnnsssss</p>
+			      	   <span><small>about 3 days ago   --via Groans Weekly--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#"><img src="images/weapon.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Weapon</h3>
+			      	   <p><i><b>Ms Link</b></i> - I am so cold and can't even lift my gun.<br/>
+			      	   Hope no one else try to break in.</p>
+			      	   <span><small>about 4 days ago   --via SoCold@home--</small></span>
+		      	  </a>
+		      </li>
+		       <li>
+			      <a href ="#under_construction"><img src="images/shelter.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Shelter</h3>
+			      	   <p><i><b>Ms Link</b></i> - Creepy guy broke into my house he didn't<br/>
+			      	   try to take anything but he bit me...weird.</p>
+			      	   <span><small>about 5 days ago   --via Creepy@home--</small></span>
+		      	  </a>
+		      </li>
+
+		   </ul>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="bronze/index.html" data-icon="forward">B App</a></li>
+				</ul>
+		   </div>
+		   </div>
+		   </div>
+	
+	<div data-role="page" id="tabs" data-add-back-btn="true">
+	
+	<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true" >
+			<h2>Tab Controls</h2>
+		</div>
+		
+		<div data-role="content">
+			
+			<div class="demo">
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Checkpoint Alpha</a></li>
+		<li><a href="#tabs-2">It's All I Have Left</a></li>
+		<li><a href="#tabs-3">How to Survive a Zombie Attack</a></li>
+	</ul>
+	<div id="tabs-1">
+	<p>"Checkpoint Alpha, fall back to checkpoint Charlie, Bravo is unresponsive,
+		fall back now, over".
+		
+		The voice drifted into the man's consciousness, forcing him to open his eyes. Blinking
+		he forced himself to focus on his surroundings. Strapped to the passenger seat he
+		dangled across the cab, hanging into the driver's side, which had mostly been
+		torn away by the wall the vehicle was against. No, not a wall, the ground. He shook
+		his head. The vehicle was on its side, crumpled with windows smashed and scattered
+		across the cab. Blood was dripping past his face too. He reached up to the pain
+		throbbing through his head and touched something sticky. Pulling his hand away
+		coated in red he realized where the blood was dripping from.
+		 
+		 The radio crackled to life again "Checkpoint Alpha, come back, over".
+		<font color="red">This is from http://zombiestories.wordpress.com</font></p>
+	</div>
+	<div id="tabs-2">
+		<p> Sally's eyes are red rimmed. She stalls during the conversation. Something
+		comes over her. Her date asks if she's alright, why she looks so sad.
+		
+		She responds and says that, "I've been crying all day." But that's not true, is it,
+		Sally? She hasn't been crying all day, but her eyes have continued to water. And it 
+		feels like crying, but there's no emotion involved, no tender sadness. No warmth
+		in her chest that rises up and pushes out the tears. Instead, they just flow, 
+		watering irises.
+		
+		Her throat scratches, and she wants to claw out the insides, turn them pink like
+		salmon. She coughs. He asks again if she's alright. She looks down at her square
+		drink napkin and see spots of blood.
+		
+		"I don't think I am," she says. He pushes back from the table. Alert spikes his
+		eyes. He checks his phone. Sweat breaks out across his forehead. Sally sees this,
+		and she wants to soothe him, tell him everything's great, this is just a minor
+		set-back, but who is she kidding?
+		
+		Spots of blood when you cough is the first sign.
+		<font color="red">This is from http://www.talesofworldwarz.com/stories</font></p>
+	</div>
+	<div id="tabs-3">
+			<p>First things first, you have to know your enemy. Zombies come in two flavors:
+		fast and slow. Fast are definitely cool, but you'll need more then a baseball bat
+		and a pair of running sneakers to survive that zombie attack. Slow zombies - well
+		why the heck would anyone die from a slow zombie? If you can't get away from a
+		slow zombie, you earned dismemberment.
+		<font color="red">This is from http://www.kuro5hin.org/story/2005/4/18/153047/155</font></p>
+	</div>
+	
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="bronze/index.html" data-icon="foward">B App</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+	
+	</div>
+		
+	</div>
+
+
+	
+
+	<!--javascript-->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+
+</body>
+</html>
