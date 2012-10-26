@@ -39,18 +39,20 @@
 		   <p id="pg1_link">
 		       <a href = "form.html" data-ajax="false">Enter Form</a>
 		   </p>
-		 
-		   	<div data-role="content" data-add-back-btn="true" >
+		   	<!--xml setup -->   
+		   	<div data-role="content" data-add-back-btn="true">
 
-		   	<ul data-role="listview" data-filter="true" data-theme="a">
+		   	<ul data-role="listview" data-filter="true">
 		      <li>
 			    <a href ="#infoPage">
 			      <img src="images/construction.png" width="60px" height="104">
-			      <h3>Movie Information</h3>
-                  <p>Under Construction</p>
+			      <h3>ApocaList Movie Information</h3>
+                  <p>XML, JSON, & CSV</p>
 
 		        </a>
 		      </li>
+		 <!--xml closed --> 
+		 
     
 		      <li>
 			      <a href ="#thumbnail_grid">
@@ -193,6 +195,37 @@
 		</div>
 		
 	</div>
+	<!-- XML page construction -->
+	
+	<div data-role="page" id="infoPage" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed" data-add-back-btn="true">
+			<h1>XML-JSON-CSV</h1>
+		</div>
+		<p id="external">Not completed, buttons not completely functional.
+        </p>
+		<div data-role="content">
+			<br />
+			<h1 align="center">
+               <a href="#" data-role="button" data-icon="arrow-r" data-theme="a" data-iconpos="right" id="xmlBtn">XML Data Example</a>
+               <a href="#" data-role="button" data-icon="arrow-r" data-theme="a" data-iconpos="right" id="jsonBtn">JSON Data Example</a>
+               <a href="#" data-role="button" data-icon="arrow-r" data-theme="a" data-iconpos="right" id="csvBtn">CSV Data Example</a>
+		    </h1>
+
+		 <br />
+            <div align="center">
+                <a href="#" data-role="button" data-inline="true" data-icon="arrow-r" data-theme="a" data-iconpos="right" id="resetBtn">Clear Data</a>
+            </div>
+		 <br /> 
+		 </div>
+        <div id="archive1"></div>
+			
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
 	
 	<!--thumbnails-->
 				

@@ -1,0 +1,84 @@
+{ "jsonData":
+        [
+            {
+                "groups": "Comedy Horror",
+                "title": "Cannibal! The Musical.",
+                "watched":  "09-21-1996",
+                "acquired": "Rented",
+                "viewed":  "Yes",
+                "watch": "No",
+                "ratestars":  "2 stars",
+                "slider": "2",
+                "notes": "What was this?!"
+            },
+            {
+                "groups": "Zombie",
+                "title": "28 Days Later",
+                "watched":  "05-23-2002",
+                "acquired": "Rented",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "3 stars",
+                "slider": "7",
+                "notes": "Fast moving zombies are creepy!"
+            },
+            {
+                "groups": "Apocalypse",
+                "title": "12 Monkeys",
+                "watched":  "06-10-1998",
+                "acquired": "Rented",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "3 stars",
+                "slider": "5",
+                "notes": "Trippy movie."
+
+            },
+            {
+                "groups": "Vampire",
+                "title": "Dark Shadows",
+                "watched":  "11-08-2012",
+                "acquired": "Purchased",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "3 stars",
+                "slider": "5",
+                "notes": "Love Johnny Depp!"
+            },
+            {
+                "groups": "Horror",
+                "title": "Halloween",
+                "watched":  "10-31-1987",
+                "acquired": "Purchased",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "4 stars",
+                "slider": "8",
+                "notes": "Classic, must see!"
+            },
+            {
+                "groups": "Zombie",
+                "title": "Boy Eats Girl ",
+                "watched":  "06-10-2006",
+                "acquired": "Rented",
+                "viewed":  "No",
+                "watch": "No",
+                "ratestars":  "2 stars",
+                "slider": "1",
+                "notes": "Wow, and it got funded."
+            },
+            {
+                "groups": "Horror",
+                "title": "The Exorcist",
+                "watched":  "11-11-1998",
+                "acquired": "Purchased",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "4 stars",
+                "slider": "7",
+                "notes": "I will never be able to eat split pea soup again."
+            }
+
+        ]
+
+}

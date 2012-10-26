@@ -1,4 +1,4 @@
-var item = {
+var json = {
     "archive1": {
         "groups": ["Category: ", "Comedy Horror"],
         "atitle": ["Title: ", "Cannibal! The Musical"],
@@ -170,7 +170,7 @@ var item = {
     "archive13": {
         "groups": ["Category: ", "Comedy Horror"],
         "atitle": ["Title: ", "Shaun of the Dead"],
-        "watched": ["Watched: ", "11-29-2004"],
+        "watched": ["Watched: ", "011-29-2004"],
         "checkbox1": ["Download: ", "No"],
         "checkbox2": ["Gift: ", "No"],
         "acquired": ["Movie was? ", "Purchased"],
@@ -294,6 +294,32 @@ var item = {
 
     }
 
-
-
 }
+
+{ "jsonData":
+    [
+        {
+                "groups": "Apocalypse",
+                "title": "12 Monkeys",
+                "watched":  "06-10-1998",
+                "acquired": "Rented",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "3 stars",
+                "slider": "5",
+                "notes": "Trippy movie."
+
+            },
+            {
+                "groups": "Vampire",
+                "title": "Dark Shadows",
+                "watched":  "11-08-2012",
+                "acquired": "Purchased",
+                "viewed":  "Yes",
+                "watch": "Yes",
+                "ratestars":  "3 stars",
+                "slider": "5",
+                "notes": "Love Johnny Depp!"
+            }
+    ]
+};
