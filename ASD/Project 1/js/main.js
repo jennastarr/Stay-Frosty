@@ -101,7 +101,7 @@
      });
 
  });
-   id="resetBtn"is clicked
+  // id="resetBtn"is clicked
      $('#resetBtn').click(function() {
          $('#archive1').remove();
 

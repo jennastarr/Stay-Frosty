@@ -14,8 +14,8 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!--stylesheets-->
-	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.9.1.custom.css" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
 	
 	
@@ -25,9 +25,9 @@
 </head>
 <body>
 
-	<div data-role="page" id="home">
+	<div data-role="page" id="home" data-theme="a">
 	
-		<div data-role="header" data-position="fixed" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="a">
 			<h1>ApocaList Movies</h1>
 		</div>
 		<br />
@@ -40,9 +40,9 @@
 		       <a href = "form.html" data-ajax="false">Enter Form</a>
 		   </p>
 		 
-		   	<div data-role="content" data-add-back-btn="true">
+		   	<div data-role="content" data-add-back-btn="true" >
 
-		   	<ul data-role="listview" data-filter="true">
+		   	<ul data-role="listview" data-filter="true" data-theme="a">
 		      <li>
 			    <a href ="#infoPage">
 			      <img src="images/construction.png" width="60px" height="104">
@@ -84,7 +84,7 @@
 		      	  </a>
 		      </li>
 		      <li>
-			      <a href ="#under_construction"><img src="images/construction.png" width="60px" height="104">
+			      <a href ="#drilldown"><img src="images/construction.png" width="60px" height="104">
 			         <h3>Place Holder</h3>
 			      		<p>This page is under construction</p>
 		      	  </a>
@@ -94,18 +94,18 @@
 		</div>
 		
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" data-position="fixed" data-theme="a">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#" data-icon="home" class="ui-btn-active">A App</a></li>
-					<li><a href="bronze/index.html" data-icon="forward">B App</a></li>
+					<li><a href="#" data-icon="home" class="ui-btn-active">Gold App</a></li>
+					<li><a href="bronze/index.html" data-icon="forward">Bronze App</a></li>
 				</ul>
 		   </div>
 		
 	</div>
 	</div>
 	
-	<div data-role="page" id="drilldown" data-add-back-btn="true">
+	<div data-role="page" id="drilldown" data-add-back-btn="true" data-theme="a">
 	
 		<div data-role="header" data-position="fixed">
 			<h1>One Window Drilldown</h1>
@@ -131,16 +131,16 @@
 		   </p>
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h4>Footer</h4>
 		</div>
 		
 	</div>
 	
 	<!--list-->
-		<div data-role="page" id="listInlay" data-add-back-btn="true">
+		<div data-role="page" id="listInlay" data-add-back-btn="true" >
 	
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-position="fixed" data-theme="a">
 			<h1>ApocaList Tracker</h1>
 		</div>
 		
@@ -188,7 +188,7 @@
 		   </p>
 		</div>
 		
-		<div data-role="footer" data-position="fixed">
+		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h4>Footer</h4>
 		</div>
 		
@@ -196,7 +196,7 @@
 	
 	<!--thumbnails-->
 				
-		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true" data-theme="a">
 	
 		<div data-role="header" data-position="fixed">
 			<h1>The Grid</h1>
@@ -206,7 +206,7 @@
 			
 			<h2 align="center">The Grid</h2>
 			<br />
-		  	<div class="ui-grid-b" data-role="listview" data-filter="true">
+		  	<div class="ui-grid-a" data-role="listview" data-filter="true" align="center">
 		  	
 				<div class="ui-grid-b" style="height:220px" align="center">
 				<div class="ui-block-a" class="ui-bar"><img src="images/construction.png" width="90px" height="160px"><br/>Resident Evil</div>
@@ -229,7 +229,7 @@
 		  	</div> 	   
 		   	
 		</div>
-		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true" data-theme="a">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="index.html" data-icon="home" class="ui-btn-active">Gold App</a></li>
@@ -314,19 +314,20 @@
 		</div>
 		
 		
-		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true" data-theme="a">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
-					<li><a href="bronze/index.html" data-icon="forward">B App</a></li>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Gold App</a></li>
+					<li><a href="bronze/index.html" data-icon="forward">Bronze App</a></li>
 				</ul>
 		   </div>
 		   </div>
 		   </div>
+		     
 	
-	<div data-role="page" id="tabs" data-add-back-btn="true">
+ 	<div data-role="page" id="tabs" data-add-back-btn="true" data-theme="a">
 	
-	<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true" >
+	<div data-role="header" data-position="fixed" data-add-back-btn="true" >
 			<h2>Tab Controls</h2>
 		</div>
 		
@@ -387,11 +388,11 @@
 		<font color="red">This is from http://www.kuro5hin.org/story/2005/4/18/153047/155</font></p>
 	</div>
 	
-		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true" data-theme="a">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
-					<li><a href="bronze/index.html" data-icon="foward">B App</a></li>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">Gold App</a></li>
+					<li><a href="bronze/index.html" data-icon="forward">Bronze App</a></li>
 				</ul>
 		</div>
 		
@@ -407,8 +408,8 @@
 	
 
 	<!--javascript-->
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/ui.js"></script>
