@@ -1,4 +1,4 @@
-var item = {
+var json = {
     "archive1": {
         "groups": ["Category: ", "Comedy Horror"],
         "atitle": ["Title: ", "Cannibal! The Musical"],
