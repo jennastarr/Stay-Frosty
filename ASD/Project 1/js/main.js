@@ -3,6 +3,10 @@
      $('#archive1').empty();
     $('#jsonBtn').on('click', function(){
         console.log("Brrrraaaaaiiiinnnnnsssssss");
+        
+  
+	
+	
 
         $.ajax({
             url: 'xhr/data.json',
@@ -13,7 +17,7 @@
                  for (var i=0, j=data.jsonData.length; i<j; i++){
                      var item = data.jsonData[i];
                      console.log(item);
-                     $('#archive1').append($(' ' +
+                     $('#archives').append($(' ' +
                          '<img src="images/construction.png" alt="photo" class="pic_text"/>' +
                              '<ul id="jsonList">' +
                              '<li>Groups: ' + item.groups + '</li>' +
@@ -36,7 +40,7 @@
 
  $('#infoPage').live('pageinit', function(){
      console.log("We are on the infoPage");
-     $('#archive1').empty();
+     $('#archives').empty();
 
      $('#xmlBtn').on('click', function(){
          console.log("We're here");
@@ -91,7 +95,7 @@
                  var row = items[j];
                  var columns = row.split(",");
                  console.log('CSV is: ', columns);
-                 $('#archive1').append($(' ' +
+                 $('#archives').append($(' ' +
                      '<img src="images/construction.png" alt="photo" class="pic_text" />' +
                      '<ul id="csvList">' +
                      '<li> ' + row + '</li> ' + '</li></ul><br/><hr/><br/>'));
@@ -101,8 +105,8 @@
      });
 
  });
-  // id="resetBtn"is clicked
+  //id="resetBtn"is clicked
      $('#resetBtn').click(function() {
-         $('#archive1').remove();
+         $('#archives').remove();
 
  });

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ApocaList Movies</title>
+		<meta name="description" content="index page for ApocaList Movies web app." />
+		<meta name="keywords" content="html5, mobile development, Full Sail University, List, Movies, Apocalypse, Zombies, Horror, Vampires, Track" />
+		<meta name="robots" content="index, follow" />
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="cleartype" content="on">
+		<!--stylesheets-->
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+
+	<body>
+		<div>
+			<!--home page-->
+			<div data-role="page" id="home" style="background-image:url(images/ApocaListLogo.png)" >
+				<div data-role="header" data-id="header" data-theme="c" data-position="fixed" data-tap-toggle="false" class="header">
+					<h1>ApocaList Movies<img src="images/vhs_sm.png" alt="Movies" class="header_img"/></h1>
+				</div>
+				<div data-role="content" class="cta" >
+					<a href="#newItem" class="featurestack" data-transition="slideup">
+						<div>
+							<p id="function">Let's Begin!</p>
+							<h5>Click here to add a movie...</h5>
+						</div>
+					</a>
+				</div>
+				
+				<div data-role="footer" data-id="footer" data-position="fixed" data-theme="a" data-tap-toggle="false" class="nav_footer" id="nav_footer" >
+					<div data-role="content" class="body" id="homebrowse">
+						<p id="bbuttontext">You have options, take them while you can.</p>
+						<a href="#MovieType" data-role="button" data-transition="slide" id="brbutton">Browse the collective...</a>
+					</div>
+					<div data-role="navbar" data-position="fixed" data-tap-toggle="false" class="navbar" id="navbar_home">
+						<ul class="app_footer">
+							<li><a href="#home" class="ui-btn-active">Home</a></li>
+							<li><a href="#newItem" class="newitem" data-transition="slideup">Add New</a></li>
+							<li><a href="#" class="viewall" data-transition="slide">View All</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div data-role="page" id="MovieType" class="browser" style="background-image:url(images/banner.png)">
+				
+				<div data-role="header" data-id="header" data-theme="c" data-position="fixed" data-tap-toggle="false" class="header">
+					<h1>ApocaList Movies<img src="images/vhs_sm.png" alt="Movies" class="header_img"/></h1>
+				</div>
+				
+				<div data-role="content" data-id="cta" class="cta">
+					<a href="#home" data-rel="back" class="featurestack">
+						<div>
+							<p class="banner">Browse by viewing Type</p>
+							<h6>or click here to go back</h6>
+						</div>
+					</a>
+				</div>
+				
+				<div data-role="content" class="body">
+					<ul class="browse" data-role="listview" data-inset="true" data-dividertheme="b">
+						<li data-role="list-divider" class="listheader">Begin by picking viewing type...</li>
+						<li data-theme="c" class="genreli"><a href="#MovieGenres" data-transition="slide" id="aMovie">Theater</a></li>
+						<li data-theme="c" class="genreli"><a href="#MovieGenres" data-transition="slide" id="download">Download</a></li>
+						<li data-theme="c" class="genreli"><a href="#MovieGenres" data-transition="slide" id="rent">Rent</a></li>
+						<li data-theme="c" class="genreli"><a href="#MovieGenres" data-transition="slide" id="purchase">Purchase</a></li>
+					</ul>
+				</div>   
+				
+				<div data-role="footer" data-id="footer" data-position="fixed" data-theme="d" data-tap-toggle="false" class="nav_footer" id="nav_footer">
+					<div data-role="navbar" data-position="fixed" data-tap-toggle="false" class="navbar" id="navbar_movietype">
+						<ul class="app_footer">
+							<li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
+							<li><a href="#newItem" class="newitem" data-transition="slideup">Add New</a></li>
+							<li><a href="#" class="viewall" data-transition="slide">View All</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div data-role="page" id="MovieGenres" class="browser" style="background-image:url(images/banner.png)">
+				<div data-role="header" data-id="header" data-theme="c" data-position="fixed" data-tap-toggle="false" class="header">
+					<h1>ApocaList Movies<img src="images/vhs_sm.png" alt="Movies" class="header_img"/></h1>
+				</div>
+				<div data-role="content" data-id="cta" class="cta">
+					<a href="#MovieType" data-rel="back" class="featurestack">
+						<div>
+							<p class="banner">Browse by Genre</p>
+							<h6>or click here to go back</h6>
+						</div>
+					</a>
+				</div>
+				<div data-role="content" class="body">
+					<ul class="browse" data-role="listview" data-inset="true" data-dividertheme="b">
+						<li data-role="list-divider" class="listheader">Pick a genre...</li>
+						<li data-theme="c" class="genreli"><a href="#Results" data-transition="slide">Horror</a></li>
+						<li data-theme="c" class="genreli"><a href="#Results" data-transition="slide">Apocalypse</a></li>
+						<li data-theme="c" class="genreli"><a href="#Results" data-transition="slide">Zombies</a></li>
+						<li data-theme="c" class="genreli"><a href="#Results" data-transition="slide">Vampires</a></li>
+						<li data-theme="c" class="genreli"><a href="#Results" data-transition="slide">Comedy Horror</a></li>
+					</ul>
+				</div>			
+				
+				<div data-role="footer" data-id="footer" data-position="fixed" data-theme="d" data-tap-toggle="false" class="nav_footer" id="nav_footer">
+					<div data-role="navbar" data-position="fixed" data-tap-toggle="false" class="navbar" id="navbar_genres">
+						<ul class="app_footer">
+							<li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
+							<li><a href="#newItem" class="newitem" data-transition="slideup">Add New</a></li>
+							<li><a href="#" class="viewall" data-transition="slide">View All</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div data-role="page" id="Results" class="browser" style="background-image:url(images/banner.png)">
+			
+				<div data-role="header" data-id="header" data-theme="c" data-position="fixed" data-tap-toggle="false" class="header">
+					<h1>ApocaList Movies<img src="images/vhs_sm.png" alt="Movies" class="header_img"/></h1>
+				</div>
+				
+				<div data-role="content" data-id="cta" class="cta">
+					<a href="#Genres" data-rel="back" class="featurestack">
+						<div>
+							<p class="banner">Results</p>
+							<h6>or click here to go back</h6>
+						</div>
+					</a>
+				</div>
+				
+				<div data-role="content" class="body">
+					<ul class="browse" data-role="listview" data-dividertheme="b" data-filter="true" id="resultlist">
+						
+						<li data-role="list-divider" class="listheader" id="showbrwstype">
+							<span>Viewing:</span>
+							<span><a href="#MovieType" class="resref" id="typeref">Movies</a></span>
+							<span><a href="#Genres" class="resref" id="genreref">Horror</a></span>
+						</li>
+						<li data-theme="c" class="resultli">
+							<img src="images/vhs.png" class="showimg" alt="Movie" />
+							<h3 class="showtitle">Abraham Lincoln Vampire Hunter</h3>
+							<p>
+								<span class="p_space"> | </span>
+								<span class="shownum">Times Watched: 3</span>
+							</p>
+							<p>
+								<span class="showrating">Rating: 7</span>
+								<span class="p_space"> | </span>
+								<span class="showdate">Saw on: 10-13-2012</span>
+							</p>
+						</li>
+						<li data-theme="c" class="resultli">
+							<img src="images/vhs.png" class="showimg" alt="Movie" />
+							<h3 class="showtitle">The Exorcist</h3>
+							<p>
+								<span class="p_space"> | </span>
+								<span class="shownum">Times Watched: 7</span>
+							</p>
+							<p>
+								<span class="showrating">Rating: 7</span>
+								<span class="p_space"> | </span>
+								<span class="showdate">Saw on: 11-11-1998</span>
+							</p>
+						</li>
+						<li data-theme="c" class="resultli">
+							<img src="images/vhs.png" class="showimg" alt="Movie" />
+							<h3 class="showtitle">High Tension</h3>
+							<p>
+								<span class="p_space"> | </span>
+								<span class="shownum">Times Watched: 3</span>
+							</p>
+							<p>
+								<span class="showrating">Rating: 8</span>
+								<span class="p_space"> | </span>
+								<span class="showdate">Saw on: 11-29-2004</span>
+							</p>
+						</li>
+						<li data-theme="c" class="resultli">
+							<img src="images/vhs.png" class="showimg" alt="Movie" />
+							<h3 class="showtitle">Flight of the Living Dead: Outbreak on a Plane</h3>
+							<p>
+								<span class="p_space"> | </span>
+								<span class="shownum">Times Watched: 1</span>
+							</p>
+							<p>
+								<span class="showrating">Rating: 2</span>
+								<span class="p_space"> | </span>
+								<span class="showdate">Saw on: 08-03-2008</span>
+							</p>
+						</li>
+						<li data-theme="c" class="resultli">
+							<img src="images/vhs.png" class="showimg" alt="Movie" />
+							<h3 class="showtitle">Shaun of the Dead</h3>
+							<p>
+								<span class="p_space"> | </span>
+								<span class="shownum">Times Watched: 42</span>
+							</p>
+							<p>
+								<span class="showrating">Rating: 8</span>
+								<span class="p_space"> | </span>
+								<span class="showdate">Saw on: 10-11-2004</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div data-role="footer" data-id="footer" data-position="fixed" data-theme="d" data-tap-toggle="false" class="nav_footer" id="nav_footer">
+					<div data-role="navbar" data-position="fixed" data-tap-toggle="false" class="navbar" id="navbar_results">
+						<ul class="app_footer">
+							<li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
+							<li><a href="#newItem" class="newitem" data-transition="slideup">Add New</a></li>
+							<li><a href="#" class="viewall" data-transition="slide">View All</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			
+			<div data-role="page" id="newItem" class="browser" style="background-image:url(images/banner.png)">
+				
+				<div data-role="header" data-id="header" data-theme="c" data-position="fixed" data-tap-toggle="false" class="header">
+					<h1>ApocaList Movies<img src="images/vhs_sm.png" alt="Movies" class="header_img"/></h1>
+				</div>
+				
+				<div data-role="content" data-id="cta" class="cta">
+					<a href="#home" data-transition="slideup" data-direction="reverse" class="featurestack">
+						<div>
+							<p class="banner">Add a Movie</p>
+							<h6>or click here to go home</h6>
+						</div>
+					</a>
+				</div>
+			
+				<div data-role="content" class="body results form">
+					
+					<div>
+						<p class="notify">*required fields</p>
+						<form action="#newItem" method="post" id="addItem">
+							
+							<div data-role="fieldcontain">
+								<label for="groups">Media type</label>
+								<select name="groups" id="groups" data-native-menu="false" >
+									<option value="PickOne" data-placeholder="true">Pick one</option>
+									<option value="Movie" class="option_btn" >Theater</option>
+									<option value="download" class="option_btn" >Download</option>
+									<option value="Rent" class="option_btn" >Rent</option>
+									<option value="Purchase" class="option_btn" >Purchase</option>
+								</select>
+							</div>
+							
+							<div data-role="fieldcontain">
+								<span>*<label for="movietitle" class="reqlabel">Title</label></span>
+								<input type="text" name="movietitle" id="movietitle" placeholder="Night of the Living Dead" class="required" />
+							</div>
+						
+							<div data-role="fieldcontain" class="formslider">
+								<label for="viewed" class="blocklabel">Have you seen this movie in the theater before?</label>
+								<select data-role="slider" id="favorite" data-inline="false" >
+									<option value="off" selected="selected">No</option>
+									<option value="on">Yes</option>
+								</select>
+							</div>
+							
+							<div data-role="fieldcontain">
+								<span>*<label for="watchs" class="reqlabel">Watched how many times?</label></span>
+								<input type="number" name="watchs" id="watchs" placeholder="5" class="required number" />
+							</div>
+							
+							<div data-role="fieldcontain">
+								<label for="date">Date Watched</label>
+								<input type="date" name="date" id="date" placeholder="10/31/2012" data-role="datebox" data-options='{"mode": "calbox"}' />
+							</div>
+							
+							<div data-role="fieldcontain">
+								<label for="rating" class="blocklabel">How good was the movie?</label>
+								<input type="range" name="rating" id="rating" value="5" min="0" max="10" />
+							</div>
+							
+							<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup" name="genre" id="genre">
+								<span>*<label for="genre" class="reqlabel">What was the genre?</label></span>
+									<legend>Genre</legend>
+									<input type="radio" value="Horror" name="genre" id="Horror" class="required" />
+									<label for="Horror">Horror</label>
+									<input type="radio" value="Apocalypse" name="genre" id="Apocalypse" />
+									<label for="Apocalypse">Apocalypse</label>
+									<input type="radio" value="Zombies" name="genre" id="Zombies" />
+									<label for="Zombies">Zombies</label>
+									<input type="radio" value="Vampires" name="genre" id="Vampires" />
+									<label for="Vampires">Vampires</label>
+									<input type="radio" value="Comedy" name="genre" id="Comedy" />
+									<label for="Comedy">Comedy Horror</label>
+								</fieldset>
+							</div>
+							<div data-role="fieldcontain" class="formslider">
+								<label for="favorite" class="blocklabel">Add to your favorites?</label>
+								<select data-role="slider" id="favorite" data-inline="false" >
+									<option value="off" selected="selected">No</option>
+									<option value="on">Yes</option>
+								</select>
+							</div>
+							<div data-role="fieldcontain">
+								<label for="notes">Notes</label>
+								<textarea id="notes"></textarea>
+							</div>
+							
+							<div id="formcontrols">
+								<div data-role="fieldcontain" id="fieldsubmit">
+									<input type="submit" value="Save your movie" id="submit" data-theme="a"/>
+								</div>
+								
+								<div data-role="fieldcontain" id="fieldreset">
+									<input type="reset" value="Reset the form" id="clear" class="reset" />
+								</div>
+								
+							</div>
+							<div class="hide">
+								<a href="#geterrors" id="errorslink" data-rel="dialog" data-transition="none">Open Errors Dialog</a>
+								<a href="#allclear" id="clearall" data-rel="dialog" data-transition="none">Form Reset Dialog</a>
+								<a href="#submitted" id="submitlink" data-rel="dialog" data-transition="none">Form Submission Dialog</a>
+								<input type="reset" id="hclear" class="hclear"/>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div data-role="content" class="body results reveal">
+					<p class="notify">Please select a data type to load...</p>
+					<div class="ui-grid-b" id="data_load_nav">
+						<div class="ui-block-a"><a href="#" data-role="button" data-transition="slide" id="load_JSON">JSON</a></div>
+						<div class="ui-block-b"><a href="#" data-role="button" data-transition="slide" id="load_CSV">CSV</a></div>
+						<div class="ui-block-b"><a href="#" data-role="button" data-transition="slide" id="load_XML">XML</a></div>
+					</div>
+					<div id="dataload">
+						<h4></h4>
+					</div>
+				</div>
+				<div data-role="footer" data-id="footer" data-position="fixed" data-theme="d" data-tap-toggle="false" class="nav_footer" id="nav_footer_additem">
+					<div data-role="navbar" data-position="fixed" data-tap-toggle="false" class="navbar" id="navbar_additems">
+						<ul class="form_footer">
+							<li><a href="#home" data-transition="slideup" data-direction="reverse">Home</a></li>
+							<li><a href="#" class="reset">Clear Form</a></li>
+							<li><a href="#" class="viewall" data-transition="slide">View All</a></li>
+						</ul>
+					</div>
+				</div>
+				<div data-role="footer" data-id="footer" data-position="fixed" data-theme="d" data-tap-toggle="false" class="nav_footer" id="nav_footer_additem_alt">
+					<div data-role="navbar" data-position="fixed" data-tap-toggle="false" class="navbar" id="navbar_additems_alt">
+						<ul class="form_footer">
+							<li><a href="#home" data-transition="slideup" data-direction="reverse">Home</a></li>
+							<li><a href="#" class="delete">Delete All</a></li>
+							<li><a href="#" class="viewall" data-transition="slide">Go To Form</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div data-role="dialog" id="geterrors" class="userdialog">
+			
+				<div data-role="header" data-position="fixed">
+					<h1>Something's Missing!</h1>
+				</div>
+						
+				<div data-role="content">
+					<ul>
+						<li>This will be replaced on actual validation.</li>
+					</ul>
+					<a href="#newItem" data-role="button" data-mini="true">Ok, I'll fix it!</a>
+				</div>
+			</div>
+			<div data-role="dialog" id="submitted" class="userdialog">
+			
+				<div data-role="header" data-position="fixed">
+					<h1>Movie Submitted!</h1>
+				</div>
+						
+				<div data-role="content">
+					<ul>
+						<li>Your movie was saved!</li>
+					</ul>
+					<a href="#newItem" data-role="button" data-mini="true">Great!</a>
+				</div>
+			</div>
+			<div data-role="dialog" id="allclear" class="userdialog">
+			
+				<div data-role="header" data-position="fixed">
+					<h1>All clear!</h1>
+				</div>
+				
+				<div data-role="content">
+					<p>The form has been reset</p>
+					<a href="#newItem" data-role="button" data-mini="true">Ok!</a>
+				</div>
+			</div>
+		</div>
+
+		<!--javascript-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+		<script type="text/javascript" src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
