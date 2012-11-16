@@ -3,12 +3,12 @@ $("#infoPage").live("pageshow", function(){
             success: function(data){
                 console.log(data);
                 $('#programList').empty();
-                 $.each(data.rows, function(index, family){
-                	var titles = horror.value.titles;
-                	var vieweds = horror.value.vieweds;
-                	var acquired = horror.value.rating;
-                	var rating = horror.value.slider;
-                	var note = horror.value.note;
+                 $.each(data.rows, function(index, movie){
+                	var titles = movie.value.titles;
+                	var vieweds = movie.value.vieweds;
+                	var acquired = movie.value.rating;
+                	var rating = movie.value.slider;
+                	var note = movie.value.note;
                 	$("#programList").append(
                 			$('<li>').append(
                 				$('<a>').attr("href", "program.html?program=" + notes)
