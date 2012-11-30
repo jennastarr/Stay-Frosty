@@ -1,0 +1,162 @@
+{
+	"trip1": {
+		"method": "Car",
+		"type": "Work",
+		"dest": "San Jose, CA",
+		"date": "2012-08-25",
+		"people": "1",
+		"notes": "Meeting and work dinner after."
+	},
+	"trip2": {
+		"method": "Plane",
+		"type": "Work",
+		"dest": "San Bruno, CA",
+		"date": "2012-11-15",
+		"people": "1",
+		"notes": "Job Interview."
+	},
+	"trip3": {
+		"method": "Public Transportation",
+		"type": "Moving",
+		"dest": "Berkley, CA",
+		"date": "2012-10-13",
+		"people": "1",
+		"notes": "House hunting. Distance from public transportation good. Neighborhood sketchy."
+	},
+	"trip4": {
+		"method": "Car",
+		"type": "Family",
+		"dest": "Oakland, CA",
+		"date": "2011-10-13",
+		"people": "2",
+		"notes": "Visiting Aunt."
+	},
+	"trip5": {
+		"method": "Public Transportation",
+		"type": "Moving",
+		"dest": "Daly City, CA",
+		"date": "2012-11-18",
+		"people": "1",
+		"notes": "To far from public transportation. Nice view of the ocean."
+	},
+	"trip6": {
+		"method": "Plane",
+		"type": "Family",
+		"dest": "Kansas City, MO",
+		"date": "2012-11-22",
+		"people": "4",
+		"notes": "Family dinner."
+	},
+	"trip7": {
+		"method": "Car",
+		"type": "Work",
+		"dest": "Cupertino, CA",
+		"date": "2012-09-15",
+		"people": "1",
+		"notes": "QA Testing."
+	},
+	"trip8": {
+		"method": "Public Transportation",
+		"type": "Moving",
+		"dest": "Emeryville, CA",
+		"date": "2012-10-28",
+		"people": "1",
+		"notes": "Apartment, not acceptable for Great Danes."
+	},
+	"trip9": {
+		"method": "Plane",
+		"type": "Vacation",
+		"dest": "New York City, NY",
+		"date": "2013-02-10",
+		"people": "2",
+		"notes": "Visit grandparents."
+	},
+	"trip10": {
+		"method": "Car",
+		"type": "Family",
+		"dest": "Monterey, CA",
+		"date": "2012-12-21",
+		"people": "5",
+		"notes": "Family visit to aquarium for holiday."
+	},
+	"trip11": {
+		"method": "Plane",
+		"type": "Work",
+		"dest": "Los Angeles, CA",
+		"date": "2013-01-04",
+		"people": "3",
+		"notes": "Work consultation."
+	},
+	"trip12": {
+		"method": "Car",
+		"type": "Work",
+		"dest": "Santa Clara, CA",
+		"date": "2013-11-16",
+		"people": "3",
+		"notes": "Launch luncheon."
+	},
+	"trip13": {
+		"method": "Car",
+		"type": "Moving",
+		"dest": "Concord, CA",
+		"date": "2013-08-13",
+		"people": "1",
+		"notes": "Large yard, accepts dogs, 2 bedroom."
+	},
+	"trip14": {
+		"method": "Car",
+		"type": "Vacation",
+		"dest": "Portland, OR",
+		"date": "2012-08-13",
+		"people": "4",
+		"notes": "Skate burnside."
+	},
+	"trip15": {
+		"method": "Plane",
+		"type": "Family",
+		"dest": "Kansas City, MO",
+		"date": "2013-09-13",
+		"people": "2",
+		"notes": "Visit little brother."
+	},
+	"trip16": {
+		"method": "Plane",
+		"type": "Work",
+		"dest": "Pittsburgh, CA",
+		"date": "2011-11-20",
+		"people": "1",
+		"notes": "Work orientation."
+	},
+	"trip17": {
+		"method": "Car",
+		"type": "Family",
+		"dest": "Kansas City, MO",
+		"date": "2013-11-20",
+		"people": "1",
+		"notes": "Visiting grandparents."
+	},
+	"trip18": {
+		"method": "Plane",
+		"type": "Vacation",
+		"dest": "Fort Lauderdale, FL",
+		"date": "2012-12-10",
+		"people": "2",
+		"notes": "1 week vacation to hang on the beach."
+	},
+	"trip19": {
+		"method": "Car",
+		"type": "Family",
+		"dest": "Oakland, CA",
+		"date": "2012-12-25",
+		"people": "1",
+		"notes": "Dinner with aunt."
+	},
+	"trip20": {
+		"method": "Public Transportation",
+		"type": "Moving",
+		"dest": "Albany, CA",
+		"date": "2012-11-30",
+		"people": "1",
+		"notes": "Rent is wayyyyy to high for a one bedroom."
+	}
+}
